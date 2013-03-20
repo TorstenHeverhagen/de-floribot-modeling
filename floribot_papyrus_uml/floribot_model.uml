@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:ros_profile="http:///schemas/ros_profile/_TTScAH95EeKkZvu435If8A/12" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http:///schemas/ros_profile/_TTScAH95EeKkZvu435If8A/12 ros-profile.profile.uml#_TTScAX95EeKkZvu435If8A">
+  <uml:Model xmi:id="_D3k5UG7NEeKc1p_0m1m2fQ" name="Model">
+    <packageImport xmi:id="_D3k5UW7NEeKc1p_0m1m2fQ">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_OlqMoG7NEeKc1p_0m1m2fQ" name="floribot_base">
+      <packagedElement xmi:type="uml:Class" xmi:id="_seBuEG7OEeKc1p_0m1m2fQ" name="floribot_base">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_wdtPsG7OEeKc1p_0m1m2fQ" name="cmd_vel" visibility="public" type="_TmvEYG7OEeKc1p_0m1m2fQ" aggregation="composite" isConjugated="true">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yqFnsG7OEeKc1p_0m1m2fQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yqFnsW7OEeKc1p_0m1m2fQ" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_yqG10G7OEeKc1p_0m1m2fQ">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_myGiAH6xEeKdj_bWfXxoWQ" name="tick_rate" visibility="public" type="_48xl0H95EeKkZvu435If8A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qtdkUH6xEeKdj_bWfXxoWQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qtfZgH6xEeKdj_bWfXxoWQ" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qtkSAH6xEeKdj_bWfXxoWQ" value="100"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ccHKEH9rEeKkZvu435If8A" name="tty_ssc_32" visibility="public" type="_3xv9IH95EeKkZvu435If8A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jO2pMH9rEeKkZvu435If8A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jO4eYH9rEeKkZvu435If8A" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_jO8v0H9rEeKkZvu435If8A" value="/dev/ttyS1"/>
+        </ownedAttribute>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_RS1kkG7NEeKc1p_0m1m2fQ" name="floribot_robot">
+      <packagedElement xmi:type="uml:Class" xmi:id="_BwMjoHEeEeK63bMg8hYDLg" name="floribot_teleop">
+        <ownedAttribute xmi:id="_IdgwMHEeEeK63bMg8hYDLg" name="floribot_base" type="_seBuEG7OEeKc1p_0m1m2fQ"/>
+        <ownedAttribute xmi:id="_PjTHIHEeEeK63bMg8hYDLg" name="floribot_wiimote" type="_lvwp0G7PEeKc1p_0m1m2fQ"/>
+        <ownedAttribute xmi:id="_LEHVEHudEeKvksrsoW4V2w" name="wiimote" visibility="public" type="_pK28oHuREeKvksrsoW4V2w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TjxB8HudEeKvksrsoW4V2w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TjxpAHudEeKvksrsoW4V2w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_TjyQEHudEeKvksrsoW4V2w">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedConnector xmi:id="_cpe6QHEeEeK63bMg8hYDLg" name="Connector1">
+          <end xmi:id="_cphWgHEeEeK63bMg8hYDLg" partWithPort="_PjTHIHEeEeK63bMg8hYDLg" role="_r0hooG7PEeKc1p_0m1m2fQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cphWgXEeEeK63bMg8hYDLg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cphWgnEeEeK63bMg8hYDLg" value="1"/>
+          </end>
+          <end xmi:id="_cphWg3EeEeK63bMg8hYDLg" partWithPort="_IdgwMHEeEeK63bMg8hYDLg" role="_wdtPsG7OEeKc1p_0m1m2fQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cphWhHEeEeK63bMg8hYDLg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cphWhXEeEeK63bMg8hYDLg" value="1"/>
+          </end>
+        </ownedConnector>
+        <ownedConnector xmi:id="_i5G0QHudEeKvksrsoW4V2w" name="Connector2">
+          <end xmi:id="_i5HbUHudEeKvksrsoW4V2w" partWithPort="_PjTHIHEeEeK63bMg8hYDLg" role="_km6CUHm6EeKgeZcebi8EMw">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i5HbUXudEeKvksrsoW4V2w" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i5HbUnudEeKvksrsoW4V2w" value="1"/>
+          </end>
+          <end xmi:id="_i5HbU3udEeKvksrsoW4V2w" partWithPort="_LEHVEHudEeKvksrsoW4V2w" role="_xHFAwHubEeKvksrsoW4V2w">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i5HbVHudEeKvksrsoW4V2w" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i5HbVXudEeKvksrsoW4V2w" value="1"/>
+          </end>
+        </ownedConnector>
+        <ownedConnector xmi:id="_ADkjUHueEeKvksrsoW4V2w" name="Connector3">
+          <end xmi:id="_ADlKYHueEeKvksrsoW4V2w" partWithPort="_PjTHIHEeEeK63bMg8hYDLg" role="_0WgU8HE5EeK0lpH0cfB_hQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ADlKYXueEeKvksrsoW4V2w" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ADlKYnueEeKvksrsoW4V2w" value="1"/>
+          </end>
+          <end xmi:id="_ADlxcHueEeKvksrsoW4V2w" partWithPort="_LEHVEHudEeKvksrsoW4V2w" role="_mGnkAHubEeKvksrsoW4V2w">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ADlxcXueEeKvksrsoW4V2w" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ADlxcnueEeKvksrsoW4V2w" value="1"/>
+          </end>
+        </ownedConnector>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_StdvgG7NEeKc1p_0m1m2fQ" name="floribot_wiimote">
+      <packagedElement xmi:type="uml:Class" xmi:id="_lvwp0G7PEeKc1p_0m1m2fQ" name="floribot_wiimote">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_r0hooG7PEeKc1p_0m1m2fQ" name="cmd_vel" visibility="public" type="_TmvEYG7OEeKc1p_0m1m2fQ" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ujX0gG7PEeKc1p_0m1m2fQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ujYbkG7PEeKc1p_0m1m2fQ" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_ujZCoG7PEeKc1p_0m1m2fQ">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_0WgU8HE5EeK0lpH0cfB_hQ" name="joy" visibility="public" type="_e5dz0Hm5EeKgeZcebi8EMw" aggregation="composite" isConjugated="true">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2sIIgHE5EeK0lpH0cfB_hQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2sKkwHE5EeK0lpH0cfB_hQ" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_2sMZ8HE5EeK0lpH0cfB_hQ">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_km6CUHm6EeKgeZcebi8EMw" name="joy/set_feedback" visibility="public" type="_j-Bu4HoyEeKTIprlc0WVtw" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wrOIwHm6EeKgeZcebi8EMw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wrPW4Hm6EeKgeZcebi8EMw" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_wrUPYHm6EeKgeZcebi8EMw">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_8jHE8IDaEeKljL2dRZjz_g" name="tick_rate" visibility="public" type="_48xl0H95EeKkZvu435If8A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ATe_QIDbEeKljL2dRZjz_g" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ATfmUIDbEeKljL2dRZjz_g" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_ATg0cIDbEeKljL2dRZjz_g" value="100"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_SdkkIIZMEeKyMJu2HtFwkg" name="StateMachine1">
+          <region xmi:id="_ZlXtQIZMEeKyMJu2HtFwkg" name="Region1">
+            <transition xmi:id="_vr-YAIZMEeKyMJu2HtFwkg" name="Transition0" source="_eAmicIZMEeKyMJu2HtFwkg" target="_gLOm8IZMEeKyMJu2HtFwkg"/>
+            <transition xmi:id="_xpzWoIZMEeKyMJu2HtFwkg" name="Transition1" source="_gLOm8IZMEeKyMJu2HtFwkg" target="_n7JgAIZMEeKyMJu2HtFwkg">
+              <effect xmi:type="uml:FunctionBehavior" xmi:id="_Sl9OoIZNEeKyMJu2HtFwkg" name="DoSomething">
+                <language>C++</language>
+                <body>ROS_INFO(&quot;fsdfs&quot;);</body>
+              </effect>
+            </transition>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_eAmicIZMEeKyMJu2HtFwkg" name="Initial0"/>
+            <subvertex xmi:type="uml:State" xmi:id="_gLOm8IZMEeKyMJu2HtFwkg" name="TeleopMode"/>
+            <subvertex xmi:type="uml:State" xmi:id="_n7JgAIZMEeKyMJu2HtFwkg" name="Task1Mode"/>
+          </region>
+        </ownedBehavior>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Z0dnYG7NEeKc1p_0m1m2fQ" name="geometry_msgs">
+      <packagedElement xmi:type="uml:Class" xmi:id="_6_XGAG7NEeKc1p_0m1m2fQ" name="XYZ">
+        <ownedAttribute xmi:id="_HSoOcG7OEeKc1p_0m1m2fQ" name="x" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LhmwUG7OEeKc1p_0m1m2fQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LhnXYG7OEeKc1p_0m1m2fQ" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_LholgG7OEeKc1p_0m1m2fQ">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_MjY9cG7OEeKc1p_0m1m2fQ" name="y" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OuCQEG7OEeKc1p_0m1m2fQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OuC3IG7OEeKc1p_0m1m2fQ" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_OuEFQG7OEeKc1p_0m1m2fQ">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_PjTEIG7OEeKc1p_0m1m2fQ" name="z" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Rz1jYG7OEeKc1p_0m1m2fQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Rz1jYW7OEeKc1p_0m1m2fQ" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Rz2KcG7OEeKc1p_0m1m2fQ">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_TmvEYG7OEeKc1p_0m1m2fQ" name="Twist">
+        <ownedAttribute xmi:id="_Vl0nQG7OEeKc1p_0m1m2fQ" name="linear" visibility="public" type="_6_XGAG7NEeKc1p_0m1m2fQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XmHrEG7OEeKc1p_0m1m2fQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XmISIG7OEeKc1p_0m1m2fQ" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_XmI5MG7OEeKc1p_0m1m2fQ">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_YR4k4G7OEeKc1p_0m1m2fQ" name="angular" visibility="public" type="_6_XGAG7NEeKc1p_0m1m2fQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bYwPMG7OEeKc1p_0m1m2fQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bYwPMW7OEeKc1p_0m1m2fQ" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_bYxdUG7OEeKc1p_0m1m2fQ">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_KtpOgHEYEeK63bMg8hYDLg" name="wiimote">
+      <packagedElement xmi:type="uml:Class" xmi:id="_pK28oHuREeKvksrsoW4V2w" name="wiimote">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_mGnkAHubEeKvksrsoW4V2w" name="joy" visibility="public" type="_e5dz0Hm5EeKgeZcebi8EMw" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rVnYcHubEeKvksrsoW4V2w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rVnYcXubEeKvksrsoW4V2w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_rVomkHubEeKvksrsoW4V2w">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_xHFAwHubEeKvksrsoW4V2w" name="joy/set_feedback" visibility="public" type="_j-Bu4HoyEeKTIprlc0WVtw" aggregation="composite" isConjugated="true">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6Rfh4HubEeKvksrsoW4V2w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6RgI8HubEeKvksrsoW4V2w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_6RgwAHubEeKvksrsoW4V2w">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Th3dMHEYEeK63bMg8hYDLg" name="phidgets"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_JXSDEHEZEeK63bMg8hYDLg" name="hokuyo_node"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_kmFYYHm5EeKgeZcebi8EMw" name="sensor_msgs">
+      <packagedElement xmi:type="uml:Interface" xmi:id="_e5dz0Hm5EeKgeZcebi8EMw" name="Joy"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_j-Bu4HoyEeKTIprlc0WVtw" name="JoyFeedbackArray"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_oVqjwHvCEeKQzYBn8sWKCg" name="LaserScan"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_57g6wHuvEeKQzYBn8sWKCg" name="floribot_stage">
+      <packagedElement xmi:type="uml:Class" xmi:id="_CL0HkHuxEeKQzYBn8sWKCg" name="floribot_stage">
+        <ownedAttribute xmi:id="_A4MxUHu2EeKQzYBn8sWKCg" name="stage" type="_C0_yAHuyEeKQzYBn8sWKCg">
+          <ownedComment xmi:id="__GTgcHu2EeKQzYBn8sWKCg">
+            <body>$(find floribot_stage)/worlds/test_fuerte.world</body>
+          </ownedComment>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_weftEHu3EeKQzYBn8sWKCg" name="scan" visibility="public" type="_oVqjwHvCEeKQzYBn8sWKCg" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xwrtsHu3EeKQzYBn8sWKCg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xws70Hu3EeKQzYBn8sWKCg" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_xwv_IHu3EeKQzYBn8sWKCg">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_9d14YHu3EeKQzYBn8sWKCg" name="cmd_vel" visibility="public" type="_TmvEYG7OEeKc1p_0m1m2fQ" aggregation="composite" isConjugated="true">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CI6gYHu4EeKQzYBn8sWKCg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CI7HcHu4EeKQzYBn8sWKCg" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_CI7ugHu4EeKQzYBn8sWKCg">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_9O8fcH0lEeK_usuKtf8MXw" name="use_sim_time" visibility="public" type="_6AmaUH95EeKkZvu435If8A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BXbXwH0mEeK_usuKtf8MXw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BXb-0H0mEeK_usuKtf8MXw" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_BXd0AH0mEeK_usuKtf8MXw" value="true"/>
+        </ownedAttribute>
+        <ownedConnector xmi:id="_7oUhMHu3EeKQzYBn8sWKCg" name="Connector1">
+          <end xmi:id="_7oVIQHu3EeKQzYBn8sWKCg" partWithPort="_A4MxUHu2EeKQzYBn8sWKCg" role="_pR3HQHu3EeKQzYBn8sWKCg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7oVIQXu3EeKQzYBn8sWKCg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7oVIQnu3EeKQzYBn8sWKCg" value="1"/>
+          </end>
+          <end xmi:id="_7oVvUHu3EeKQzYBn8sWKCg" role="_weftEHu3EeKQzYBn8sWKCg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7oVvUXu3EeKQzYBn8sWKCg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7oVvUnu3EeKQzYBn8sWKCg" value="1"/>
+          </end>
+        </ownedConnector>
+        <ownedConnector xmi:id="_FcdUwHu4EeKQzYBn8sWKCg" name="Connector2">
+          <end xmi:id="_Fcd70Hu4EeKQzYBn8sWKCg" partWithPort="_A4MxUHu2EeKQzYBn8sWKCg" role="_TTdWQHu3EeKQzYBn8sWKCg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Fcd70Xu4EeKQzYBn8sWKCg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Fcd70nu4EeKQzYBn8sWKCg" value="1"/>
+          </end>
+          <end xmi:id="_Fcd703u4EeKQzYBn8sWKCg" role="_9d14YHu3EeKQzYBn8sWKCg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Fcd71Hu4EeKQzYBn8sWKCg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Fcd71Xu4EeKQzYBn8sWKCg" value="1"/>
+          </end>
+        </ownedConnector>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_30U1sHu4EeKQzYBn8sWKCg" name="floribot_teleop">
+        <ownedAttribute xmi:id="_GlEGIHu5EeKQzYBn8sWKCg" name="stage" visibility="public" type="_CL0HkHuxEeKQzYBn8sWKCg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QS_kAHu5EeKQzYBn8sWKCg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QS_kAXu5EeKQzYBn8sWKCg" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_QTAyIHu5EeKQzYBn8sWKCg">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_rIiqIHu5EeKQzYBn8sWKCg" name="floribot_wiimote" visibility="public" type="_lvwp0G7PEeKc1p_0m1m2fQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t6Rx8Hu5EeKQzYBn8sWKCg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t6SZAHu5EeKQzYBn8sWKCg" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_t6TAEHu5EeKQzYBn8sWKCg">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_eVmGoHu6EeKQzYBn8sWKCg" name="wiimote" visibility="public" type="_pK28oHuREeKvksrsoW4V2w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gxgvcHu6EeKQzYBn8sWKCg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gxhWgHu6EeKQzYBn8sWKCg" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_gxh9kHu6EeKQzYBn8sWKCg">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedConnector xmi:id="_V-huAHu6EeKQzYBn8sWKCg" name="Connector1">
+          <end xmi:id="_V-huAXu6EeKQzYBn8sWKCg" partWithPort="_rIiqIHu5EeKQzYBn8sWKCg" role="_r0hooG7PEeKc1p_0m1m2fQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_V-huAnu6EeKQzYBn8sWKCg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_V-huA3u6EeKQzYBn8sWKCg" value="1"/>
+          </end>
+          <end xmi:id="_V-iVEHu6EeKQzYBn8sWKCg" partWithPort="_GlEGIHu5EeKQzYBn8sWKCg" role="_9d14YHu3EeKQzYBn8sWKCg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_V-iVEXu6EeKQzYBn8sWKCg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_V-iVEnu6EeKQzYBn8sWKCg" value="1"/>
+          </end>
+        </ownedConnector>
+        <ownedConnector xmi:id="_3HddwHu6EeKQzYBn8sWKCg" name="Connector2">
+          <end xmi:id="_3HeE0Hu6EeKQzYBn8sWKCg" partWithPort="_rIiqIHu5EeKQzYBn8sWKCg" role="_0WgU8HE5EeK0lpH0cfB_hQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3HeE0Xu6EeKQzYBn8sWKCg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3HeE0nu6EeKQzYBn8sWKCg" value="1"/>
+          </end>
+          <end xmi:id="_3HeE03u6EeKQzYBn8sWKCg" partWithPort="_eVmGoHu6EeKQzYBn8sWKCg" role="_mGnkAHubEeKvksrsoW4V2w">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3HeE1Hu6EeKQzYBn8sWKCg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3HeE1Xu6EeKQzYBn8sWKCg" value="1"/>
+          </end>
+        </ownedConnector>
+        <ownedConnector xmi:id="_4dLTgHu6EeKQzYBn8sWKCg" name="Connector3">
+          <end xmi:id="_4dLTgXu6EeKQzYBn8sWKCg" partWithPort="_eVmGoHu6EeKQzYBn8sWKCg" role="_xHFAwHubEeKvksrsoW4V2w">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4dLTgnu6EeKQzYBn8sWKCg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4dLTg3u6EeKQzYBn8sWKCg" value="1"/>
+          </end>
+          <end xmi:id="_4dLThHu6EeKQzYBn8sWKCg" partWithPort="_rIiqIHu5EeKQzYBn8sWKCg" role="_km6CUHm6EeKgeZcebi8EMw">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4dLThXu6EeKQzYBn8sWKCg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4dLThnu6EeKQzYBn8sWKCg" value="1"/>
+          </end>
+        </ownedConnector>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_R4KC8IG3EeKUi5Ww85oteA" name="floribot_find_goal">
+        <ownedAttribute xmi:id="_eQ6vYIG3EeKUi5Ww85oteA" name="floribot_stage" visibility="public" type="_CL0HkHuxEeKQzYBn8sWKCg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j1P6oIG3EeKUi5Ww85oteA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j1Rv0IG3EeKUi5Ww85oteA" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_j1UMEIG3EeKUi5Ww85oteA">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0Wam4IG3EeKUi5Ww85oteA" name="find_goal" visibility="public" type="_T55tsIG2EeKUi5Ww85oteA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5-6gcIG3EeKUi5Ww85oteA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5-8VoIG3EeKUi5Ww85oteA" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_5-_Y8IG3EeKUi5Ww85oteA">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedConnector xmi:id="_AkMLUIG4EeKUi5Ww85oteA" name="Connector1">
+          <end xmi:id="_AkMyYIG4EeKUi5Ww85oteA" partWithPort="_eQ6vYIG3EeKUi5Ww85oteA" role="_weftEHu3EeKQzYBn8sWKCg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AkMyYYG4EeKUi5Ww85oteA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AkMyYoG4EeKUi5Ww85oteA" value="1"/>
+          </end>
+          <end xmi:id="_AkNZcIG4EeKUi5Ww85oteA" partWithPort="_0Wam4IG3EeKUi5Ww85oteA" role="_kDckIIG2EeKUi5Ww85oteA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AkNZcYG4EeKUi5Ww85oteA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AkNZcoG4EeKUi5Ww85oteA" value="1"/>
+          </end>
+        </ownedConnector>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_PXgs0HuxEeKQzYBn8sWKCg" name="stage">
+      <packagedElement xmi:type="uml:Class" xmi:id="_C0_yAHuyEeKQzYBn8sWKCg" name="stageros">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_TTdWQHu3EeKQzYBn8sWKCg" name="cmd_vel" visibility="public" type="_TmvEYG7OEeKc1p_0m1m2fQ" aggregation="composite" isConjugated="true">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aFHQQHu3EeKQzYBn8sWKCg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aFH3UHu3EeKQzYBn8sWKCg" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aFIeYHu3EeKQzYBn8sWKCg">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_pR3HQHu3EeKQzYBn8sWKCg" name="base_scan" visibility="public" type="_oVqjwHvCEeKQzYBn8sWKCg" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sTVUMHu3EeKQzYBn8sWKCg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sTV7QHu3EeKQzYBn8sWKCg" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_sTXwcHu3EeKQzYBn8sWKCg">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_bmXCQH91EeKkZvu435If8A" name="primitive_types">
+      <packagedElement xmi:type="uml:Class" xmi:id="_3xv9IH95EeKkZvu435If8A" name="String"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_48xl0H95EeKkZvu435If8A" name="Integer"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_6AmaUH95EeKkZvu435If8A" name="Boolean"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_7HnFsH95EeKkZvu435If8A" name="Double"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_jWUN0IG1EeKUi5Ww85oteA" name="floribot_navigation">
+      <packagedElement xmi:type="uml:Class" xmi:id="_T55tsIG2EeKUi5Ww85oteA" name="floribot_find_goal">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_kDckIIG2EeKUi5Ww85oteA" name="scan" visibility="public" type="_oVqjwHvCEeKQzYBn8sWKCg" aggregation="composite" isConjugated="true">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2q5sIG2EeKUi5Ww85oteA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m2sH0IG2EeKUi5Ww85oteA" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_m2t9AIG2EeKUi5Ww85oteA">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_vqb1YIG2EeKUi5Ww85oteA" name="tick_rate" visibility="public" type="_48xl0H95EeKkZvu435If8A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yXzakIG2EeKUi5Ww85oteA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yX0BoIG2EeKUi5Ww85oteA" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_yX2d4IG2EeKUi5Ww85oteA" value="100"/>
+        </ownedAttribute>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_MXx_0G7NEeKc1p_0m1m2fQ">
+      <eAnnotations xmi:id="_MX_bMG7NEeKc1p_0m1m2fQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="ros-profile.profile.uml#_TTScAX95EeKkZvu435If8A"/>
+      </eAnnotations>
+      <appliedProfile href="ros-profile.profile.uml#_LiFfkGysEeKsDNjRLLrw6Q"/>
+    </profileApplication>
+  </uml:Model>
+  <ros_profile:existing_package xmi:id="_dBouAG7NEeKc1p_0m1m2fQ" base_Package="_Z0dnYG7NEeKc1p_0m1m2fQ"/>
+  <ros_profile:node xmi:id="_vRWKQG7OEeKc1p_0m1m2fQ" base_Class="_seBuEG7OEeKc1p_0m1m2fQ"/>
+  <ros_profile:node xmi:id="_p_A4gG7PEeKc1p_0m1m2fQ" base_Class="_lvwp0G7PEeKc1p_0m1m2fQ"/>
+  <ros_profile:existing_package xmi:id="_RodrkHEYEeK63bMg8hYDLg" base_Package="_KtpOgHEYEeK63bMg8hYDLg"/>
+  <ros_profile:existing_package xmi:id="_VYIbQHEYEeK63bMg8hYDLg" base_Package="_Th3dMHEYEeK63bMg8hYDLg"/>
+  <ros_profile:existing_package xmi:id="_QuUiEHEZEeK63bMg8hYDLg" base_Package="_JXSDEHEZEeK63bMg8hYDLg"/>
+  <ros_profile:launch xmi:id="_GJdp8HEeEeK63bMg8hYDLg" base_Class="_BwMjoHEeEeK63bMg8hYDLg"/>
+  <ros_profile:existing_package xmi:id="_puv7UHm5EeKgeZcebi8EMw" base_Package="_kmFYYHm5EeKgeZcebi8EMw"/>
+  <ros_profile:node xmi:id="_JXmw8HuSEeKvksrsoW4V2w" base_Class="_pK28oHuREeKvksrsoW4V2w" language="Python"/>
+  <ros_profile:launch xmi:id="_HJ9ckHuxEeKQzYBn8sWKCg" base_Class="_CL0HkHuxEeKQzYBn8sWKCg"/>
+  <ros_profile:existing_package xmi:id="_R6UAwHuxEeKQzYBn8sWKCg" base_Package="_PXgs0HuxEeKQzYBn8sWKCg"/>
+  <ros_profile:node xmi:id="_OipE4HuyEeKQzYBn8sWKCg" base_Class="_C0_yAHuyEeKQzYBn8sWKCg" language="Other"/>
+  <ros_profile:launch xmi:id="_Bx4D8Hu5EeKQzYBn8sWKCg" base_Class="_30U1sHu4EeKQzYBn8sWKCg"/>
+  <ros_profile:existing_package xmi:id="_gc8WsH91EeKkZvu435If8A" base_Package="_bmXCQH91EeKkZvu435If8A"/>
+  <ros_profile:primitive_type xmi:id="_DotkEH96EeKkZvu435If8A" base_Class="_7HnFsH95EeKkZvu435If8A"/>
+  <ros_profile:primitive_type xmi:id="_FHvt4H96EeKkZvu435If8A" base_Class="_48xl0H95EeKkZvu435If8A"/>
+  <ros_profile:primitive_type xmi:id="_GcLKMH96EeKkZvu435If8A" base_Class="_6AmaUH95EeKkZvu435If8A"/>
+  <ros_profile:primitive_type xmi:id="_H0ZhYH96EeKkZvu435If8A" base_Class="_3xv9IH95EeKkZvu435If8A"/>
+  <ros_profile:node xmi:id="_gzAHEIG2EeKUi5Ww85oteA" base_Class="_T55tsIG2EeKUi5Ww85oteA"/>
+  <ros_profile:launch xmi:id="_WtBgIIG3EeKUi5Ww85oteA" base_Class="_R4KC8IG3EeKUi5Ww85oteA"/>
+</xmi:XMI>
