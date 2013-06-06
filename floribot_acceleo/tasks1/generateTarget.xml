@@ -7,7 +7,7 @@
 	<import file="../../floribot_acceleo/tasks1/generate.xml"/>
 
     <!-- Change the values of MODEL and TARGET to point to your model and output folder -->
-	<property name="MODEL" value="/home/thever/workspace-juno/floribot_papyrus_uml/floribot_model.uml"/>
+	<property name="MODEL" value="/home/floribot/de-floribot-modeling/floribot_papyrus_uml/floribot_model.uml"/>
 	<property name="TARGET" value="/home/floribot/ros_workspace"/>
 
 	<target name="generateSample" description="Generate files in 'TARGET'">

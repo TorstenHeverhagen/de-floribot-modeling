@@ -12,6 +12,7 @@ echo %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 echo %%%% [aPackage.name/]
 echo %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 cd [aPackage.name/]
+mkdir include
 cmake -G "Eclipse CDT4 - Unix Makefiles" -DCMAKE_ECLIPSE_VERSION=3.7
 cd ..
 		[/if]

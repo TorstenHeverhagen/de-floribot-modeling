@@ -42,6 +42,10 @@ namespace [aClass.namespace.name/] {
 	[/if]
     n_.getParam("/[aClass.name/]/[attr.name/]", [attr.name/]);
 [/for]
+    // [protected ('constructor')]
+    // TODO: fill with your code
+    // [/protected] don't delete this line
+
 } // end of constructor
 
 [aClass.name.toUpperFirst()/]::~[aClass.name.toUpperFirst()/]()
@@ -71,7 +75,7 @@ void [aClass.name.toUpperFirst()/]::[port.name.replaceAll('/', '_')/]_message (c
  *
  * @generated
  */
-void [aClass.name.toUpperFirst()/]::publish_[port.name.replaceAll('/', '_')/] (const [port.type.namespace.name/]::[port.type.name/]::ConstPtr& msg)
+void [aClass.name.toUpperFirst()/]::publish_[port.name.replaceAll('/', '_')/] ([port.type.namespace.name/]::[port.type.name/] msg)
 {
 	[port.name.replaceAll('/', '_')/]_pub.publish(msg);
 }

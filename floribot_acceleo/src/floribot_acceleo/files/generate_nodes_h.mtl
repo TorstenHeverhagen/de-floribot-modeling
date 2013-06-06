@@ -20,6 +20,9 @@
 [for (port : Port | aClass.ownedPort)]
 #include <[port.type.namespace.name/]/[port.type.name/].h>
 [/for]
+// [protected ('specific includes')]
+// TODO: include your own headers
+// [/protected] don't delete this line
 
 namespace [aClass.namespace.name/] {
 
@@ -35,7 +38,7 @@ public:
 [if (port.isConjugated)]
 	void [port.name.replaceAll('/', '_')/]_message (const [port.type.namespace.name/]::[port.type.name/]::ConstPtr& msg);
 [else]
-	void publish_[port.name.replaceAll('/', '_')/] (const [port.type.namespace.name/]::[port.type.name/]::ConstPtr& msg);
+	void publish_[port.name.replaceAll('/', '_')/] ([port.type.namespace.name/]::[port.type.name/] msg);
 [/if]
 [/for]
 

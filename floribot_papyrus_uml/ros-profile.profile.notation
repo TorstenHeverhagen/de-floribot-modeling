@@ -186,6 +186,32 @@
     <element xmi:type="uml:Stereotype" href="ros-profile.profile.uml#_zyBfkH92EeKkZvu435If8A"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zyHmMX92EeKkZvu435If8A" x="400" y="50"/>
   </children>
+  <children xmi:type="notation:Shape" xmi:id="_AQfO8M3lEeK7g9n_B3nRNQ" type="1026" fontName="Sans" fontHeight="10" lineColor="0">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AQf2AM3lEeK7g9n_B3nRNQ" source="ShadowFigure">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AQf2Ac3lEeK7g9n_B3nRNQ" key="ShadowFigure_Value" value="false"/>
+    </eAnnotations>
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AQf2As3lEeK7g9n_B3nRNQ" source="displayNameLabelIcon">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AQf2A83lEeK7g9n_B3nRNQ" key="displayNameLabelIcon_value" value="false"/>
+    </eAnnotations>
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AQf2BM3lEeK7g9n_B3nRNQ" source="QualifiedName">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AQgdEM3lEeK7g9n_B3nRNQ" key="QualifiedNameDepth" value="1000"/>
+    </eAnnotations>
+    <children xmi:type="notation:DecorationNode" xmi:id="_AQgdEc3lEeK7g9n_B3nRNQ" type="1034"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_AQgdEs3lEeK7g9n_B3nRNQ" type="1071">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_AQgdE83lEeK7g9n_B3nRNQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AQgdFM3lEeK7g9n_B3nRNQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AQgdFc3lEeK7g9n_B3nRNQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AQgdFs3lEeK7g9n_B3nRNQ"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_AQgdF83lEeK7g9n_B3nRNQ" visible="false" type="1019">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_AQgdGM3lEeK7g9n_B3nRNQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AQgdGc3lEeK7g9n_B3nRNQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AQgdGs3lEeK7g9n_B3nRNQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AQgdG83lEeK7g9n_B3nRNQ"/>
+    </children>
+    <element xmi:type="uml:Stereotype" href="ros-profile.profile.uml#_AQZIUM3lEeK7g9n_B3nRNQ"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AQfO8c3lEeK7g9n_B3nRNQ" x="229" y="239" width="132" height="74"/>
+  </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_RhDYYWysEeKsDNjRLLrw6Q"/>
   <element xmi:type="uml:Profile" href="ros-profile.profile.uml#_LiFfkGysEeKsDNjRLLrw6Q"/>
   <edges xmi:type="notation:Connector" xmi:id="_CLTrgGyuEeKsDNjRLLrw6Q" type="1013" source="_SYLNoGysEeKsDNjRLLrw6Q" target="_-Al-kGytEeKsDNjRLLrw6Q" lineColor="0">
@@ -212,5 +238,11 @@
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_u9PQAn94EeKkZvu435If8A" points="[-6, -11, 110, 225]$[-99, -240, 17, -4]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_u9S6YH94EeKkZvu435If8A" id="(0.7227722772277227,0.11)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_u9S6YX94EeKkZvu435If8A" id="(0.83,0.36)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_KfQJAM3lEeK7g9n_B3nRNQ" type="1013" source="_AQfO8M3lEeK7g9n_B3nRNQ" target="_-Al-kGytEeKsDNjRLLrw6Q" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_KfQJAc3lEeK7g9n_B3nRNQ" fontName="Sans" fontHeight="10"/>
+    <element xmi:type="uml:Extension" href="ros-profile.profile.uml#_KfD7wc3lEeK7g9n_B3nRNQ"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KfQJAs3lEeK7g9n_B3nRNQ" points="[4, -15, -25, 190]$[-21, -183, -50, 22]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KffZkM3lEeK7g9n_B3nRNQ" id="(0.19696969696969696,0.15)"/>
   </edges>
 </notation:Diagram>

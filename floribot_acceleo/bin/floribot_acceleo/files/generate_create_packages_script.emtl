@@ -25,7 +25,7 @@
               </source>
               <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement/name"/>
             </body>
-            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;cmake -G &quot;Eclipse CDT4 - Unix Makefiles&quot; -DCMAKE_ECLIPSE_VERSION=3.7&#xA;cd ..&#xA;"/>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;mkdir include&#xA;cmake -G &quot;Eclipse CDT4 - Unix Makefiles&quot; -DCMAKE_ECLIPSE_VERSION=3.7&#xA;cd ..&#xA;"/>
             <ifExpr xsi:type="ocl.ecore:OperationCallExp">
               <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
               <source xsi:type="ocl.ecore:OperationCallExp">
@@ -177,7 +177,7 @@
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/generateCreatePackageScript">
       <details key="start" value="113"/>
-      <details key="end" value="661"/>
+      <details key="end" value="675"/>
       <details key="line" value="5"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/generateCreatePackageScript/@body.0">
@@ -187,17 +187,17 @@
     </eAnnotations>
     <eAnnotations source="positions.2" references="/0/generateCreatePackageScript/@body.1">
       <details key="start" value="176"/>
-      <details key="end" value="649"/>
+      <details key="end" value="663"/>
       <details key="line" value="7"/>
     </eAnnotations>
     <eAnnotations source="positions.3" references="/0/generateCreatePackageScript/@body.1/@body.0">
       <details key="start" value="236"/>
-      <details key="end" value="641"/>
+      <details key="end" value="655"/>
       <details key="line" value="8"/>
     </eAnnotations>
     <eAnnotations source="positions.4" references="/0/generateCreatePackageScript/@body.1/@body.0/@body.0">
       <details key="start" value="294"/>
-      <details key="end" value="633"/>
+      <details key="end" value="647"/>
       <details key="line" value="9"/>
     </eAnnotations>
     <eAnnotations source="positions.5" references="/0/generateCreatePackageScript/@body.1/@body.0/@body.0/@body.0">
@@ -232,7 +232,7 @@
     </eAnnotations>
     <eAnnotations source="positions.11" references="/0/generateCreatePackageScript/@body.1/@body.0/@body.0/@body.4">
       <details key="start" value="550"/>
-      <details key="end" value="626"/>
+      <details key="end" value="640"/>
       <details key="line" value="15"/>
     </eAnnotations>
     <eAnnotations source="positions.12" references="/0/generateCreatePackageScript/@body.1/@body.0/@body.0/@ifExpr">
