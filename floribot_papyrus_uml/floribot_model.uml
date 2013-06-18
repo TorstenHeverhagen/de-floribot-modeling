@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:ros_profile="http:///schemas/ros_profile/_qmXZ8M3mEeK7g9n_B3nRNQ/13" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http:///schemas/ros_profile/_qmXZ8M3mEeK7g9n_B3nRNQ/13 ros-profile.profile.uml#_qmadQM3mEeK7g9n_B3nRNQ">
+<xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:ros_profile="http:///schemas/ros_profile/_xvNcQNIVEeK4iuF3riAlKg/17" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http:///schemas/ros_profile/_xvNcQNIVEeK4iuF3riAlKg/17 file:/home/floribot/de-floribot-modeling/floribot_papyrus_uml/ros-profile.profile.uml#_xvODUNIVEeK4iuF3riAlKg">
   <uml:Model xmi:id="_D3k5UG7NEeKc1p_0m1m2fQ" name="Model">
     <packageImport xmi:id="_D3k5UW7NEeKc1p_0m1m2fQ">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -22,6 +22,27 @@
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jO2pMH9rEeKkZvu435If8A" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jO4eYH9rEeKkZvu435If8A" value="1"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_jO8v0H9rEeKkZvu435If8A" value="/dev/ttyS1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_3LSdUNG7EeKRjLcAyfxC4w" name="floribot_accu_watchdog">
+        <ownedAttribute xmi:id="_AjTDoNG-EeKRjLcAyfxC4w" name="tick_rate" visibility="public" type="_48xl0H95EeKkZvu435If8A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D51hoNG-EeKRjLcAyfxC4w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D53W0NG-EeKRjLcAyfxC4w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_D54k8NG-EeKRjLcAyfxC4w" value="100"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_v1aqENIKEeK4iuF3riAlKg" name="phidgets/interface_kit" visibility="public" type="_S0htwNIKEeK4iuF3riAlKg" aggregation="composite" isConjugated="true">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1U3VUNIKEeK4iuF3riAlKg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1U7mwNIKEeK4iuF3riAlKg" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_1U_4MNIKEeK4iuF3riAlKg">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_9wF6UNK8EeKWbaQoqCvQrA" name="accu_low" visibility="public" type="_fHARINK8EeKWbaQoqCvQrA" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BvtKgNK9EeKWbaQoqCvQrA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BvvmwNK9EeKWbaQoqCvQrA" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Bv1GUNK9EeKWbaQoqCvQrA">
+            <value xsi:nil="true"/>
+          </defaultValue>
         </ownedAttribute>
       </packagedElement>
     </packagedElement>
@@ -285,7 +306,9 @@
         </ownedAttribute>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_Th3dMHEYEeK63bMg8hYDLg" name="phidgets"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Th3dMHEYEeK63bMg8hYDLg" name="phidgets">
+      <packagedElement xmi:type="uml:Interface" xmi:id="_S0htwNIKEeK4iuF3riAlKg" name="interface_kit_params"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_JXSDEHEZEeK63bMg8hYDLg" name="hokuyo_node">
       <packagedElement xmi:type="uml:Class" xmi:id="_xFL7sM3fEeK7g9n_B3nRNQ" name="hokuyo_node">
         <ownedAttribute xmi:type="uml:Port" xmi:id="_zPSmUM3gEeK7g9n_B3nRNQ" name="scan" visibility="public" type="_oVqjwHvCEeKQzYBn8sWKCg" aggregation="composite">
@@ -439,6 +462,15 @@
           </end>
         </ownedConnector>
       </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_o-QToNddEeKexp2bToTQlA" name="floribot_task3">
+        <ownedAttribute xmi:id="_1uWiANddEeKexp2bToTQlA" name="task3" visibility="public" type="_SSdncNUIEeKn5N1emf-oLg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5hdnQNddEeKexp2bToTQlA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5he1YNddEeKexp2bToTQlA" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_5hifwNddEeKexp2bToTQlA">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_PXgs0HuxEeKQzYBn8sWKCg" name="stage">
       <packagedElement xmi:type="uml:Class" xmi:id="_C0_yAHuyEeKQzYBn8sWKCg" name="stageros">
@@ -492,6 +524,13 @@
             <value xsi:nil="true"/>
           </defaultValue>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_6kO5wNUWEeKNIruPAf5LPw" name="tick_rate" visibility="public" type="_48xl0H95EeKkZvu435If8A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_95dJINUWEeKNIruPAf5LPw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_95flYNUWEeKNIruPAf5LPw" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_95jPwNUWEeKNIruPAf5LPw">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_jhoBQM6pEeKjQf6UPiByjQ" name="floribot_task2">
@@ -524,37 +563,107 @@
         </ownedAttribute>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_lS2HQM6pEeKjQf6UPiByjQ" name="floribot_task3"/>
-    <profileApplication xmi:id="_MXx_0G7NEeKc1p_0m1m2fQ">
-      <eAnnotations xmi:id="_MX_bMG7NEeKc1p_0m1m2fQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="ros-profile.profile.uml#_qmadQM3mEeK7g9n_B3nRNQ"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_lS2HQM6pEeKjQf6UPiByjQ" name="floribot_task3">
+      <packagedElement xmi:type="uml:Class" xmi:id="_SSdncNUIEeKn5N1emf-oLg" name="floribot_task3">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_kKqYENUIEeKn5N1emf-oLg" name="scan" visibility="public" type="_oVqjwHvCEeKQzYBn8sWKCg" aggregation="composite" isConjugated="true">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_naSVwNUIEeKn5N1emf-oLg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_naS80NUIEeKn5N1emf-oLg" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_naWAINUIEeKn5N1emf-oLg">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_uzibQNUIEeKn5N1emf-oLg" name="task_cmd_vel" visibility="public" type="_TmvEYG7OEeKc1p_0m1m2fQ" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yFLyMNUIEeKn5N1emf-oLg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yFNAUNUIEeKn5N1emf-oLg" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_yFQqsNUIEeKn5N1emf-oLg">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_lz9mQNUKEeKn5N1emf-oLg" name="max_scan_distance" visibility="public" type="_7HnFsH95EeKkZvu435If8A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wjENQNUKEeKn5N1emf-oLg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wjHQkNUKEeKn5N1emf-oLg" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_wjLiANUKEeKn5N1emf-oLg" value="1.0"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_6CuloNUKEeKn5N1emf-oLg" name="y_hist_width" visibility="public" type="_7HnFsH95EeKkZvu435If8A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DOZD8NULEeKn5N1emf-oLg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DObgMNULEeKn5N1emf-oLg" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_DOg_wNULEeKn5N1emf-oLg" value="0.1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ELgzgNULEeKn5N1emf-oLg" name="x_hist_width" visibility="public" type="_7HnFsH95EeKkZvu435If8A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TS0w4NULEeKn5N1emf-oLg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TS3NINULEeKn5N1emf-oLg" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_TS960NULEeKn5N1emf-oLg" value="0.1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_R-aGMNUMEeKn5N1emf-oLg" name="tick_rate" visibility="public" type="_48xl0H95EeKkZvu435If8A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VAXbUNUMEeKn5N1emf-oLg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VAZ3kNUMEeKn5N1emf-oLg" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_VAdh8NUMEeKn5N1emf-oLg" value="100"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_GQuWENUXEeKNIruPAf5LPw" name="row_width" visibility="public" type="_7HnFsH95EeKkZvu435If8A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JLtggNUXEeKNIruPAf5LPw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JLv8wNUXEeKNIruPAf5LPw" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_JLzAENUXEeKNIruPAf5LPw" value="0.75"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_GVEqMNc-EeKNIruPAf5LPw" name="x_hist_min" visibility="public" type="_7HnFsH95EeKkZvu435If8A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_I_Tb0Nc-EeKNIruPAf5LPw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_I_UC4Nc-EeKNIruPAf5LPw" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_I_VRANc-EeKNIruPAf5LPw" value="0"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_J1e14Nc-EeKNIruPAf5LPw" name="x_hist_max" visibility="public" type="_7HnFsH95EeKkZvu435If8A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqOOYNc-EeKNIruPAf5LPw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MqO1cNc-EeKNIruPAf5LPw" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_MqRRsNc-EeKNIruPAf5LPw" value="2"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_NVFwUNc-EeKNIruPAf5LPw" name="y_hist_min" visibility="public" type="_7HnFsH95EeKkZvu435If8A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Pz8_cNc-EeKNIruPAf5LPw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Pz9mgNc-EeKNIruPAf5LPw" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Pz-0oNc-EeKNIruPAf5LPw" value="-2"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_QfBVsNc-EeKNIruPAf5LPw" name="y_hist_max" visibility="public" type="_7HnFsH95EeKkZvu435If8A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Syf0MNc-EeKNIruPAf5LPw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SygbQNc-EeKNIruPAf5LPw" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_SyiQcNc-EeKNIruPAf5LPw" value="2"/>
+        </ownedAttribute>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_UbphsNK8EeKWbaQoqCvQrA" name="std_msgs">
+      <packagedElement xmi:type="uml:Interface" xmi:id="_fHARINK8EeKWbaQoqCvQrA" name="Bool"/>
+    </packagedElement>
+    <profileApplication xmi:id="_Izw9ANIWEeK4iuF3riAlKg">
+      <eAnnotations xmi:id="_I1eNMNIWEeK4iuF3riAlKg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="ros-profile.profile.uml#_xvODUNIVEeK4iuF3riAlKg"/>
       </eAnnotations>
       <appliedProfile href="ros-profile.profile.uml#_LiFfkGysEeKsDNjRLLrw6Q"/>
     </profileApplication>
   </uml:Model>
-  <ros_profile:existing_package xmi:id="_dBouAG7NEeKc1p_0m1m2fQ" base_Package="_Z0dnYG7NEeKc1p_0m1m2fQ"/>
-  <ros_profile:node xmi:id="_vRWKQG7OEeKc1p_0m1m2fQ" base_Class="_seBuEG7OEeKc1p_0m1m2fQ"/>
-  <ros_profile:node xmi:id="_p_A4gG7PEeKc1p_0m1m2fQ" base_Class="_lvwp0G7PEeKc1p_0m1m2fQ"/>
-  <ros_profile:existing_package xmi:id="_RodrkHEYEeK63bMg8hYDLg" base_Package="_KtpOgHEYEeK63bMg8hYDLg"/>
-  <ros_profile:existing_package xmi:id="_VYIbQHEYEeK63bMg8hYDLg" base_Package="_Th3dMHEYEeK63bMg8hYDLg"/>
-  <ros_profile:existing_package xmi:id="_QuUiEHEZEeK63bMg8hYDLg" base_Package="_JXSDEHEZEeK63bMg8hYDLg"/>
-  <ros_profile:launch xmi:id="_GJdp8HEeEeK63bMg8hYDLg" base_Class="_BwMjoHEeEeK63bMg8hYDLg"/>
-  <ros_profile:existing_package xmi:id="_puv7UHm5EeKgeZcebi8EMw" base_Package="_kmFYYHm5EeKgeZcebi8EMw"/>
-  <ros_profile:node xmi:id="_JXmw8HuSEeKvksrsoW4V2w" base_Class="_pK28oHuREeKvksrsoW4V2w" language="Python"/>
-  <ros_profile:launch xmi:id="_HJ9ckHuxEeKQzYBn8sWKCg" base_Class="_CL0HkHuxEeKQzYBn8sWKCg"/>
-  <ros_profile:existing_package xmi:id="_R6UAwHuxEeKQzYBn8sWKCg" base_Package="_PXgs0HuxEeKQzYBn8sWKCg"/>
-  <ros_profile:node xmi:id="_OipE4HuyEeKQzYBn8sWKCg" base_Class="_C0_yAHuyEeKQzYBn8sWKCg" language="Other"/>
-  <ros_profile:launch xmi:id="_Bx4D8Hu5EeKQzYBn8sWKCg" base_Class="_30U1sHu4EeKQzYBn8sWKCg"/>
-  <ros_profile:existing_package xmi:id="_gc8WsH91EeKkZvu435If8A" base_Package="_bmXCQH91EeKkZvu435If8A"/>
-  <ros_profile:primitive_type xmi:id="_DotkEH96EeKkZvu435If8A" base_Class="_7HnFsH95EeKkZvu435If8A"/>
-  <ros_profile:primitive_type xmi:id="_FHvt4H96EeKkZvu435If8A" base_Class="_48xl0H95EeKkZvu435If8A"/>
-  <ros_profile:primitive_type xmi:id="_GcLKMH96EeKkZvu435If8A" base_Class="_6AmaUH95EeKkZvu435If8A"/>
-  <ros_profile:primitive_type xmi:id="_H0ZhYH96EeKkZvu435If8A" base_Class="_3xv9IH95EeKkZvu435If8A"/>
-  <ros_profile:node xmi:id="_gzAHEIG2EeKUi5Ww85oteA" base_Class="_T55tsIG2EeKUi5Ww85oteA"/>
-  <ros_profile:launch xmi:id="_WtBgIIG3EeKUi5Ww85oteA" base_Class="_R4KC8IG3EeKUi5Ww85oteA"/>
-  <ros_profile:launch xmi:id="_NhEYYM3eEeK7g9n_B3nRNQ" base_Class="_Bb6EwM3bEeK7g9n_B3nRNQ"/>
-  <ros_profile:node xmi:id="_4t6noM3fEeK7g9n_B3nRNQ" base_Class="_xFL7sM3fEeK7g9n_B3nRNQ"/>
-  <ros_profile:launch xmi:id="_0hXK0M3jEeK7g9n_B3nRNQ" base_Class="_vmlS4M3jEeK7g9n_B3nRNQ"/>
-  <ros_profile:node xmi:id="_9d9gEM6sEeKjQf6UPiByjQ" base_Class="_4mNG8M6sEeKjQf6UPiByjQ"/>
-  <ros_profile:launch xmi:id="_WA3t0M6wEeKjQf6UPiByjQ" base_Class="_D63KsM6wEeKjQf6UPiByjQ"/>
+  <ros_profile:launch xmi:id="_MKck8NIWEeK4iuF3riAlKg" base_Class="_CL0HkHuxEeKQzYBn8sWKCg"/>
+  <ros_profile:launch xmi:id="_N-0FkNIWEeK4iuF3riAlKg" base_Class="_30U1sHu4EeKQzYBn8sWKCg"/>
+  <ros_profile:launch xmi:id="_QcBH0NIWEeK4iuF3riAlKg" base_Class="_BwMjoHEeEeK63bMg8hYDLg"/>
+  <ros_profile:node xmi:id="_SXTv0NIWEeK4iuF3riAlKg" base_Class="_4mNG8M6sEeKjQf6UPiByjQ"/>
+  <ros_profile:launch xmi:id="_Ves-kNIWEeK4iuF3riAlKg" base_Class="_D63KsM6wEeKjQf6UPiByjQ"/>
+  <ros_profile:node xmi:id="_YBGC0NIWEeK4iuF3riAlKg" base_Class="_T55tsIG2EeKUi5Ww85oteA"/>
+  <ros_profile:node xmi:id="_ar6DQNIWEeK4iuF3riAlKg" base_Class="_seBuEG7OEeKc1p_0m1m2fQ"/>
+  <ros_profile:node xmi:id="_cKhWUNIWEeK4iuF3riAlKg" base_Class="_3LSdUNG7EeKRjLcAyfxC4w" language="Simulink"/>
+  <ros_profile:launch xmi:id="_gUaj4NIWEeK4iuF3riAlKg" base_Class="_Bb6EwM3bEeK7g9n_B3nRNQ"/>
+  <ros_profile:launch xmi:id="_h5PzsNIWEeK4iuF3riAlKg" base_Class="_vmlS4M3jEeK7g9n_B3nRNQ"/>
+  <ros_profile:dont_generate xmi:id="_h5hggNIWEeK4iuF3riAlKg" base_Class="_vmlS4M3jEeK7g9n_B3nRNQ"/>
+  <ros_profile:node xmi:id="_jdzWsNIWEeK4iuF3riAlKg" base_Class="_lvwp0G7PEeKc1p_0m1m2fQ" language="Simulink"/>
+  <ros_profile:existing_package xmi:id="_m4pF4NIWEeK4iuF3riAlKg" base_Package="_Z0dnYG7NEeKc1p_0m1m2fQ"/>
+  <ros_profile:existing_package xmi:id="_n3BZsNIWEeK4iuF3riAlKg" base_Package="_KtpOgHEYEeK63bMg8hYDLg"/>
+  <ros_profile:existing_package xmi:id="_owD6gNIWEeK4iuF3riAlKg" base_Package="_Th3dMHEYEeK63bMg8hYDLg"/>
+  <ros_profile:existing_package xmi:id="_pvhMYNIWEeK4iuF3riAlKg" base_Package="_JXSDEHEZEeK63bMg8hYDLg"/>
+  <ros_profile:existing_package xmi:id="_rQWtANIWEeK4iuF3riAlKg" base_Package="_kmFYYHm5EeKgeZcebi8EMw"/>
+  <ros_profile:launch xmi:id="_s9_TgNIWEeK4iuF3riAlKg" base_Class="_R4KC8IG3EeKUi5Ww85oteA"/>
+  <ros_profile:existing_package xmi:id="_uYtlENIWEeK4iuF3riAlKg" base_Package="_PXgs0HuxEeKQzYBn8sWKCg"/>
+  <ros_profile:existing_package xmi:id="_v9z6oNIWEeK4iuF3riAlKg" base_Package="_bmXCQH91EeKkZvu435If8A"/>
+  <ros_profile:existing_package xmi:id="_X7jXENK8EeKWbaQoqCvQrA" base_Package="_UbphsNK8EeKWbaQoqCvQrA"/>
+  <ros_profile:node xmi:id="_cq9FQNUIEeKn5N1emf-oLg" base_Class="_SSdncNUIEeKn5N1emf-oLg" language="Simulink"/>
+  <ros_profile:node xmi:id="_95xekNdNEeKNIruPAf5LPw" base_Class="_C0_yAHuyEeKQzYBn8sWKCg" language="Other"/>
+  <ros_profile:node xmi:id="_BdZ9YNdOEeKNIruPAf5LPw" base_Class="_pK28oHuREeKvksrsoW4V2w" language="Python"/>
+  <ros_profile:node xmi:id="_IqAG8NdOEeKNIruPAf5LPw" base_Class="_xFL7sM3fEeK7g9n_B3nRNQ"/>
+  <ros_profile:launch xmi:id="_tHG_YNddEeKexp2bToTQlA" base_Class="_o-QToNddEeKexp2bToTQlA"/>
+  <ros_profile:primitive_type xmi:id="_8LUI8NdeEeKexp2bToTQlA" base_Class="_7HnFsH95EeKkZvu435If8A"/>
+  <ros_profile:primitive_type xmi:id="_9mu-ENdeEeKexp2bToTQlA" base_Class="_6AmaUH95EeKkZvu435If8A"/>
+  <ros_profile:primitive_type xmi:id="_--gCQNdeEeKexp2bToTQlA" base_Class="_48xl0H95EeKkZvu435If8A"/>
+  <ros_profile:primitive_type xmi:id="_ARzdMNdfEeKexp2bToTQlA" base_Class="_3xv9IH95EeKkZvu435If8A"/>
 </xmi:XMI>

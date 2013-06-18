@@ -9,12 +9,11 @@
  *     Obeo - initial API and implementation
  *******************************************************************************/
 package floribot_acceleo.main;
-
+ 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 import org.eclipse.acceleo.engine.event.IAcceleoTextGenerationListener;
 import org.eclipse.acceleo.engine.generation.strategy.IAcceleoGenerationStrategy;
@@ -24,7 +23,6 @@ import org.eclipse.emf.common.util.Monitor;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.ResourceSet;
-import org.eclipse.uml2.uml.resource.UMLResource;
 
 /**
  * Entry point of the 'Generate' generation module.

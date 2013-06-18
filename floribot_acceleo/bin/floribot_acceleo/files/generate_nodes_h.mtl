@@ -42,6 +42,9 @@ public:
 [/if]
 [/for]
 
+	// [protected ('additional public members')]
+	// TODO: declare your variables and methods
+	// [/protected]  don't delete this line
 private:
 	ros::NodeHandle n_;
 [for (attr : Property | aClass.attribute)]

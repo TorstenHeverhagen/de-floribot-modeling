@@ -86,6 +86,94 @@
               </source>
             </body>
             <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=")&#xA;"/>
+            <body xsi:type="mtl:LetBlock">
+              <body xsi:type="mtl:IfBlock">
+                <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="rosbuild_add_library(simulink_"/>
+                <body xsi:type="ocl.ecore:PropertyCallExp">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  <source xsi:type="ocl.ecore:VariableExp" name="aNamedElement" referredVariable="/0/generateCMakeList/@body.1/@body.1/aNamedElement">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement/name"/>
+                </body>
+                <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" src/simulink/"/>
+                <body xsi:type="ocl.ecore:PropertyCallExp">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  <source xsi:type="ocl.ecore:VariableExp" name="aNamedElement" referredVariable="/0/generateCMakeList/@body.1/@body.1/aNamedElement">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement/name"/>
+                </body>
+                <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="_ert_rtw/"/>
+                <body xsi:type="ocl.ecore:PropertyCallExp">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  <source xsi:type="ocl.ecore:VariableExp" name="aNamedElement" referredVariable="/0/generateCMakeList/@body.1/@body.1/aNamedElement">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement/name"/>
+                </body>
+                <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".cpp)&#xA;target_link_libraries("/>
+                <body xsi:type="ocl.ecore:PropertyCallExp">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  <source xsi:type="ocl.ecore:VariableExp" name="aNamedElement" referredVariable="/0/generateCMakeList/@body.1/@body.1/aNamedElement">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement/name"/>
+                </body>
+                <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="_node simulink_"/>
+                <body xsi:type="ocl.ecore:PropertyCallExp">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  <source xsi:type="ocl.ecore:VariableExp" name="aNamedElement" referredVariable="/0/generateCMakeList/@body.1/@body.1/aNamedElement">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement/name"/>
+                </body>
+                <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=")&#xA;"/>
+                <ifExpr xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/equalsIgnoreCase">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                  <source xsi:type="ocl.ecore:PropertyCallExp">
+                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                    <source xsi:type="ocl.ecore:VariableExp" name="lang" referredVariable="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/lang">
+                      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//EnumerationLiteral"/>
+                    </source>
+                    <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement/name"/>
+                  </source>
+                  <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="Simulink">
+                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  </argument>
+                </ifExpr>
+              </body>
+              <letVariable name="lang">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//EnumerationLiteral"/>
+                <initExpression xsi:type="ocl.ecore:OperationCallExp">
+                  <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//EnumerationLiteral"/>
+                  <source xsi:type="ocl.ecore:OperationCallExp">
+                    <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+                    <source xsi:type="ocl.ecore:VariableExp" name="aNamedElement" referredVariable="/0/generateCMakeList/@body.1/@body.1/aNamedElement">
+                      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+                    </source>
+                    <argument xsi:type="ocl.ecore:OperationCallExp">
+                      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Stereotype"/>
+                      <source xsi:type="ocl.ecore:VariableExp" name="aNamedElement" referredVariable="/0/generateCMakeList/@body.1/@body.1/aNamedElement">
+                        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+                      </source>
+                      <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="ros_profile::node">
+                        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                      </argument>
+                      <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/4.0.0/UML#//Element/getAppliedStereotype"/>
+                    </argument>
+                    <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="language">
+                      <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                    </argument>
+                    <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/4.0.0/UML#//Element/getValue"/>
+                  </source>
+                  <argument xsi:type="ocl.ecore:TypeExp" eType="/18/EnumerationLiteral">
+                    <referredType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//EnumerationLiteral"/>
+                  </argument>
+                  <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclAsType"/>
+                </initExpression>
+              </letVariable>
+            </body>
             <ifExpr xsi:type="ocl.ecore:OperationCallExp">
               <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
               <source xsi:type="ocl.ecore:VariableExp" name="aNamedElement" referredVariable="/0/generateCMakeList/@body.1/@body.1/aNamedElement">
@@ -153,6 +241,13 @@
       <eOperations name="toUpperFirst">
         <eAnnotations source="MTL"/>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </eOperations>
+      <eOperations name="equalsIgnoreCase">
+        <eAnnotations source="MTL non-standard"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+        <eParameters name="other">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </eParameters>
       </eOperations>
       <eOperations name="+">
         <eAnnotations source="MTL non-standard"/>
@@ -263,6 +358,32 @@
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
   </ocl.ecore:Variable>
+  <ecore:EPackage name="types">
+    <eClassifiers xsi:type="ocl.ecore:TypeType" name="EnumerationLiteral">
+      <referredType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//EnumerationLiteral"/>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+  </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
   </ocl.ecore:Variable>
@@ -278,7 +399,7 @@
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/generateCMakeList">
       <details key="start" value="100"/>
-      <details key="end" value="1907"/>
+      <details key="end" value="2329"/>
       <details key="line" value="4"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/generateCMakeList/@body.0">
@@ -288,7 +409,7 @@
     </eAnnotations>
     <eAnnotations source="positions.2" references="/0/generateCMakeList/@body.1">
       <details key="start" value="158"/>
-      <details key="end" value="1895"/>
+      <details key="end" value="2317"/>
       <details key="line" value="6"/>
     </eAnnotations>
     <eAnnotations source="positions.3" references="/0/generateCMakeList/@body.1/@body.0">
@@ -298,12 +419,12 @@
     </eAnnotations>
     <eAnnotations source="positions.4" references="/0/generateCMakeList/@body.1/@body.1">
       <details key="start" value="1000"/>
-      <details key="end" value="1451"/>
+      <details key="end" value="1873"/>
       <details key="line" value="29"/>
     </eAnnotations>
     <eAnnotations source="positions.5" references="/0/generateCMakeList/@body.1/@body.1/@body.0">
       <details key="start" value="1061"/>
-      <details key="end" value="1444"/>
+      <details key="end" value="1866"/>
       <details key="line" value="30"/>
     </eAnnotations>
     <eAnnotations source="positions.6" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.0">
@@ -446,97 +567,252 @@
       <details key="end" value="1438"/>
       <details key="line" value="33"/>
     </eAnnotations>
-    <eAnnotations source="positions.34" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@ifExpr">
+    <eAnnotations source="positions.34" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13">
+      <details key="start" value="1438"/>
+      <details key="end" value="1859"/>
+      <details key="line" value="34"/>
+    </eAnnotations>
+    <eAnnotations source="positions.35" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/@body.0">
+      <details key="start" value="1597"/>
+      <details key="end" value="1852"/>
+      <details key="line" value="35"/>
+    </eAnnotations>
+    <eAnnotations source="positions.36" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/@body.0/@body.0">
+      <details key="start" value="1643"/>
+      <details key="end" value="1673"/>
+      <details key="line" value="36"/>
+    </eAnnotations>
+    <eAnnotations source="positions.37" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/@body.0/@body.1">
+      <details key="start" value="1674"/>
+      <details key="end" value="1692"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.38" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/@body.0/@body.1/aNamedElement">
+      <details key="start" value="1674"/>
+      <details key="end" value="1687"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.39" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/@body.0/@body.2">
+      <details key="start" value="1694"/>
+      <details key="end" value="1708"/>
+      <details key="line" value="36"/>
+    </eAnnotations>
+    <eAnnotations source="positions.40" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/@body.0/@body.3">
+      <details key="start" value="1709"/>
+      <details key="end" value="1727"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.41" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/@body.0/@body.3/aNamedElement">
+      <details key="start" value="1709"/>
+      <details key="end" value="1722"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.42" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/@body.0/@body.4">
+      <details key="start" value="1729"/>
+      <details key="end" value="1738"/>
+      <details key="line" value="36"/>
+    </eAnnotations>
+    <eAnnotations source="positions.43" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/@body.0/@body.5">
+      <details key="start" value="1739"/>
+      <details key="end" value="1757"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.44" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/@body.0/@body.5/aNamedElement">
+      <details key="start" value="1739"/>
+      <details key="end" value="1752"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.45" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/@body.0/@body.6">
+      <details key="start" value="1759"/>
+      <details key="end" value="1787"/>
+      <details key="line" value="36"/>
+    </eAnnotations>
+    <eAnnotations source="positions.46" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/@body.0/@body.7">
+      <details key="start" value="1788"/>
+      <details key="end" value="1806"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.47" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/@body.0/@body.7/aNamedElement">
+      <details key="start" value="1788"/>
+      <details key="end" value="1801"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.48" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/@body.0/@body.8">
+      <details key="start" value="1808"/>
+      <details key="end" value="1823"/>
+      <details key="line" value="37"/>
+    </eAnnotations>
+    <eAnnotations source="positions.49" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/@body.0/@body.9">
+      <details key="start" value="1824"/>
+      <details key="end" value="1842"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.50" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/@body.0/@body.9/aNamedElement">
+      <details key="start" value="1824"/>
+      <details key="end" value="1837"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.51" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/@body.0/@body.10">
+      <details key="start" value="1844"/>
+      <details key="end" value="1846"/>
+      <details key="line" value="37"/>
+    </eAnnotations>
+    <eAnnotations source="positions.52" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/@body.0/@ifExpr">
+      <details key="start" value="1601"/>
+      <details key="end" value="1641"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.53" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/@body.0/@ifExpr/@source">
+      <details key="start" value="1602"/>
+      <details key="end" value="1611"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.54" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/@body.0/@ifExpr/@source/lang">
+      <details key="start" value="1602"/>
+      <details key="end" value="1606"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.55" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/@body.0/@ifExpr/@argument.0">
+      <details key="start" value="1629"/>
+      <details key="end" value="1639"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.56" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/lang">
+      <details key="start" value="1443"/>
+      <details key="end" value="1594"/>
+      <details key="line" value="34"/>
+    </eAnnotations>
+    <eAnnotations source="positions.57" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/lang/@initExpression">
+      <details key="start" value="1472"/>
+      <details key="end" value="1595"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.58" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/lang/@initExpression/@source">
+      <details key="start" value="1472"/>
+      <details key="end" value="1565"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.59" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/lang/@initExpression/@source/aNamedElement">
+      <details key="start" value="1473"/>
+      <details key="end" value="1486"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.60" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/lang/@initExpression/@source/@argument.0">
+      <details key="start" value="1496"/>
+      <details key="end" value="1551"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.61" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/lang/@initExpression/@source/@argument.0/aNamedElement">
+      <details key="start" value="1496"/>
+      <details key="end" value="1509"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.62" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/lang/@initExpression/@source/@argument.0/@argument.0">
+      <details key="start" value="1531"/>
+      <details key="end" value="1550"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.63" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/lang/@initExpression/@source/@argument.1">
+      <details key="start" value="1553"/>
+      <details key="end" value="1563"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.64" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@body.13/lang/@initExpression/@argument.0">
+      <details key="start" value="1576"/>
+      <details key="end" value="1594"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.65" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@ifExpr">
       <details key="start" value="1065"/>
       <details key="end" value="1143"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.35" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@ifExpr/aNamedElement">
+    <eAnnotations source="positions.66" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@ifExpr/aNamedElement">
       <details key="start" value="1066"/>
       <details key="end" value="1079"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.36" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@ifExpr/@argument.0">
+    <eAnnotations source="positions.67" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@ifExpr/@argument.0">
       <details key="start" value="1100"/>
       <details key="end" value="1141"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.37" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@ifExpr/@argument.0/self">
+    <eAnnotations source="positions.68" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@ifExpr/@argument.0/self">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.38" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@ifExpr/@argument.0/@argument.0">
+    <eAnnotations source="positions.69" references="/0/generateCMakeList/@body.1/@body.1/@body.0/@ifExpr/@argument.0/@argument.0">
       <details key="start" value="1121"/>
       <details key="end" value="1140"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.39" references="/0/generateCMakeList/@body.1/@body.1/aNamedElement">
+    <eAnnotations source="positions.70" references="/0/generateCMakeList/@body.1/@body.1/aNamedElement">
       <details key="start" value="1006"/>
       <details key="end" value="1034"/>
       <details key="line" value="29"/>
     </eAnnotations>
-    <eAnnotations source="positions.40" references="/0/generateCMakeList/@body.1/@body.1/@iterSet">
+    <eAnnotations source="positions.71" references="/0/generateCMakeList/@body.1/@body.1/@iterSet">
       <details key="start" value="1037"/>
       <details key="end" value="1057"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.41" references="/0/generateCMakeList/@body.1/@body.1/@iterSet/aPackage">
+    <eAnnotations source="positions.72" references="/0/generateCMakeList/@body.1/@body.1/@iterSet/aPackage">
       <details key="start" value="1037"/>
       <details key="end" value="1045"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.42" references="/0/generateCMakeList/@body.1/@body.2">
-      <details key="start" value="1452"/>
-      <details key="end" value="1454"/>
-      <details key="line" value="36"/>
+    <eAnnotations source="positions.73" references="/0/generateCMakeList/@body.1/@body.2">
+      <details key="start" value="1874"/>
+      <details key="end" value="1876"/>
+      <details key="line" value="42"/>
     </eAnnotations>
-    <eAnnotations source="positions.43" references="/0/generateCMakeList/@body.1/@body.3">
-      <details key="start" value="1454"/>
-      <details key="end" value="1887"/>
-      <details key="line" value="37"/>
+    <eAnnotations source="positions.74" references="/0/generateCMakeList/@body.1/@body.3">
+      <details key="start" value="1876"/>
+      <details key="end" value="2309"/>
+      <details key="line" value="43"/>
     </eAnnotations>
-    <eAnnotations source="positions.44" references="/0/generateCMakeList/@body.1/@body.3/@body.0">
-      <details key="start" value="1492"/>
-      <details key="end" value="1875"/>
-      <details key="line" value="38"/>
+    <eAnnotations source="positions.75" references="/0/generateCMakeList/@body.1/@body.3/@body.0">
+      <details key="start" value="1914"/>
+      <details key="end" value="2297"/>
+      <details key="line" value="44"/>
     </eAnnotations>
-    <eAnnotations source="positions.45" references="/0/generateCMakeList/@body.1/@body.3/@marker">
-      <details key="start" value="1466"/>
-      <details key="end" value="1490"/>
+    <eAnnotations source="positions.76" references="/0/generateCMakeList/@body.1/@body.3/@marker">
+      <details key="start" value="1888"/>
+      <details key="end" value="1912"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.46" references="/0/generateCMakeList/@body.1/@body.4">
-      <details key="start" value="1887"/>
-      <details key="end" value="1888"/>
-      <details key="line" value="51"/>
+    <eAnnotations source="positions.77" references="/0/generateCMakeList/@body.1/@body.4">
+      <details key="start" value="2309"/>
+      <details key="end" value="2310"/>
+      <details key="line" value="57"/>
     </eAnnotations>
-    <eAnnotations source="positions.47" references="/0/generateCMakeList/@body.1/@fileUrl">
+    <eAnnotations source="positions.78" references="/0/generateCMakeList/@body.1/@fileUrl">
       <details key="start" value="165"/>
       <details key="end" value="204"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.48" references="/0/generateCMakeList/@body.1/@fileUrl/@source">
+    <eAnnotations source="positions.79" references="/0/generateCMakeList/@body.1/@fileUrl/@source">
       <details key="start" value="165"/>
       <details key="end" value="178"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.49" references="/0/generateCMakeList/@body.1/@fileUrl/@source/aPackage">
+    <eAnnotations source="positions.80" references="/0/generateCMakeList/@body.1/@fileUrl/@source/aPackage">
       <details key="start" value="165"/>
       <details key="end" value="173"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.50" references="/0/generateCMakeList/@body.1/@fileUrl/@argument.0">
+    <eAnnotations source="positions.81" references="/0/generateCMakeList/@body.1/@fileUrl/@argument.0">
       <details key="start" value="186"/>
       <details key="end" value="203"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.51" references="/0/generateCMakeList/@body.1/@charset">
+    <eAnnotations source="positions.82" references="/0/generateCMakeList/@body.1/@charset">
       <details key="start" value="213"/>
       <details key="end" value="220"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.52" references="/0/generateCMakeList/aPackage">
+    <eAnnotations source="positions.83" references="/0/generateCMakeList/aPackage">
       <details key="start" value="135"/>
       <details key="end" value="153"/>
       <details key="line" value="4"/>

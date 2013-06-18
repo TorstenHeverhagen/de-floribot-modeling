@@ -28,7 +28,7 @@
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SYO4BGysEeKsDNjRLLrw6Q"/>
     </children>
     <element xmi:type="uml:Stereotype" href="ros-profile.profile.uml#_SX5g0GysEeKsDNjRLLrw6Q"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SYLNoWysEeKsDNjRLLrw6Q" x="24" y="83"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SYLNoWysEeKsDNjRLLrw6Q" x="24" y="83" height="62"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_T4bfcGysEeKsDNjRLLrw6Q" type="1026" fontName="Sans" fontHeight="8" lineColor="0">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_T4cGgGysEeKsDNjRLLrw6Q" source="ShadowFigure">
@@ -54,7 +54,7 @@
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T4dUo2ysEeKsDNjRLLrw6Q"/>
     </children>
     <element xmi:type="uml:Stereotype" href="ros-profile.profile.uml#_T4YcIGysEeKsDNjRLLrw6Q"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T4bfcWysEeKsDNjRLLrw6Q" x="290" y="120"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T4bfcWysEeKsDNjRLLrw6Q" x="288" y="180" height="61"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_-Al-kGytEeKsDNjRLLrw6Q" type="1031" fontName="Sans" fontHeight="8" lineColor="0">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-AmloGytEeKsDNjRLLrw6Q" source="ShadowFigure">
@@ -124,42 +124,6 @@
     <element xmi:type="uml:Stereotype" href="ros-profile.profile.uml#_yV3MgG7AEeKjBPrAwkbDWA"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yV96MW7AEeKjBPrAwkbDWA" x="530" y="125" width="154"/>
   </children>
-  <children xmi:type="notation:Shape" xmi:id="_1zrzcHuTEeKvksrsoW4V2w" type="2006" fontName="Sans" fontHeight="8" lineColor="0">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1ztooHuTEeKvksrsoW4V2w" source="ShadowFigure">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1ztooXuTEeKvksrsoW4V2w" key="ShadowFigure_Value" value="false"/>
-    </eAnnotations>
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1ztoonuTEeKvksrsoW4V2w" source="displayNameLabelIcon">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1ztoo3uTEeKvksrsoW4V2w" key="displayNameLabelIcon_value" value="false"/>
-    </eAnnotations>
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1ztopHuTEeKvksrsoW4V2w" source="QualifiedName">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1ztopXuTEeKvksrsoW4V2w" key="QualifiedNameDepth" value="1000"/>
-    </eAnnotations>
-    <children xmi:type="notation:DecorationNode" xmi:id="_1zuPsHuTEeKvksrsoW4V2w" type="5023"/>
-    <children xmi:type="notation:BasicCompartment" xmi:id="_1zuPsXuTEeKvksrsoW4V2w" type="1063">
-      <children xmi:type="notation:Shape" xmi:id="_4fQB0HuTEeKvksrsoW4V2w" type="1037" fontName="Sans" fontHeight="8" lineColor="0">
-        <element xmi:type="uml:EnumerationLiteral" href="ros-profile.profile.uml#_4fLwYHuTEeKvksrsoW4V2w"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_4fQB0XuTEeKvksrsoW4V2w"/>
-      </children>
-      <children xmi:type="notation:Shape" xmi:id="__4YykHuTEeKvksrsoW4V2w" type="1037" fontName="Sans" fontHeight="8" lineColor="0">
-        <element xmi:type="uml:EnumerationLiteral" href="ros-profile.profile.uml#__4VvQHuTEeKvksrsoW4V2w"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="__4YykXuTEeKvksrsoW4V2w"/>
-      </children>
-      <children xmi:type="notation:Shape" xmi:id="_ChgJ4HuUEeKvksrsoW4V2w" type="1037" fontName="Sans" fontHeight="8" lineColor="0">
-        <element xmi:type="uml:EnumerationLiteral" href="ros-profile.profile.uml#_ChcfgHuUEeKvksrsoW4V2w"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_ChgJ4XuUEeKvksrsoW4V2w"/>
-      </children>
-      <children xmi:type="notation:Shape" xmi:id="_88jGAHuzEeKQzYBn8sWKCg" type="1037" fontName="Sans" fontHeight="8" lineColor="0">
-        <element xmi:type="uml:EnumerationLiteral" href="ros-profile.profile.uml#_88Yt8HuzEeKQzYBn8sWKCg"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_88jGAXuzEeKQzYBn8sWKCg"/>
-      </children>
-      <styles xmi:type="notation:TitleStyle" xmi:id="_1zuPsnuTEeKvksrsoW4V2w"/>
-      <styles xmi:type="notation:SortingStyle" xmi:id="_1zuPs3uTEeKvksrsoW4V2w"/>
-      <styles xmi:type="notation:FilteringStyle" xmi:id="_1zuPtHuTEeKvksrsoW4V2w"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1zuPtXuTEeKvksrsoW4V2w"/>
-    </children>
-    <element xmi:type="uml:Enumeration" href="ros-profile.profile.uml#_1zmT4HuTEeKvksrsoW4V2w"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1zsagHuTEeKvksrsoW4V2w" x="90" y="200"/>
-  </children>
   <children xmi:type="notation:Shape" xmi:id="_zyHmMH92EeKkZvu435If8A" type="1026" fontName="Sans" fontHeight="8" lineColor="0">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zyINQH92EeKkZvu435If8A" source="ShadowFigure">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zyINQX92EeKkZvu435If8A" key="ShadowFigure_Value" value="false"/>
@@ -184,7 +148,7 @@
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zyI0WX92EeKkZvu435If8A"/>
     </children>
     <element xmi:type="uml:Stereotype" href="ros-profile.profile.uml#_zyBfkH92EeKkZvu435If8A"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zyHmMX92EeKkZvu435If8A" x="400" y="50"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zyHmMX92EeKkZvu435If8A" x="336" y="96" height="59"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_AQfO8M3lEeK7g9n_B3nRNQ" type="1026" fontName="Sans" fontHeight="10" lineColor="0">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AQf2AM3lEeK7g9n_B3nRNQ" source="ShadowFigure">
@@ -210,7 +174,47 @@
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AQgdG83lEeK7g9n_B3nRNQ"/>
     </children>
     <element xmi:type="uml:Stereotype" href="ros-profile.profile.uml#_AQZIUM3lEeK7g9n_B3nRNQ"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AQfO8c3lEeK7g9n_B3nRNQ" x="229" y="239" width="132" height="74"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AQfO8c3lEeK7g9n_B3nRNQ" x="132" y="180" width="132" height="61"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_sEalANIHEeK4iuF3riAlKg" type="2006" fontName="Sans" fontHeight="10" lineColor="0">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sEbMENIHEeK4iuF3riAlKg" source="ShadowFigure">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sEbMEdIHEeK4iuF3riAlKg" key="ShadowFigure_Value" value="false"/>
+    </eAnnotations>
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sEbMEtIHEeK4iuF3riAlKg" source="displayNameLabelIcon">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sEbME9IHEeK4iuF3riAlKg" key="displayNameLabelIcon_value" value="false"/>
+    </eAnnotations>
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sEbMFNIHEeK4iuF3riAlKg" source="QualifiedName">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sEbMFdIHEeK4iuF3riAlKg" key="QualifiedNameDepth" value="1000"/>
+    </eAnnotations>
+    <children xmi:type="notation:DecorationNode" xmi:id="_sEbMFtIHEeK4iuF3riAlKg" type="5023"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_sEbMF9IHEeK4iuF3riAlKg" type="1063">
+      <children xmi:type="notation:Shape" xmi:id="_6LWqgNIHEeK4iuF3riAlKg" type="1037" fontName="Sans" fontHeight="10" lineColor="0">
+        <element xmi:type="uml:EnumerationLiteral" href="ros-profile.profile.uml#_g4vWwNIHEeK4iuF3riAlKg"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_6LWqgdIHEeK4iuF3riAlKg" x="76" y="53"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_6m5XANIHEeK4iuF3riAlKg" type="1037" fontName="Sans" fontHeight="10" lineColor="0">
+        <element xmi:type="uml:EnumerationLiteral" href="ros-profile.profile.uml#__4VvQHuTEeKvksrsoW4V2w"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_6m5XAdIHEeK4iuF3riAlKg" x="26" y="41"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_7mqx8NIHEeK4iuF3riAlKg" type="1037" fontName="Sans" fontHeight="10" lineColor="0">
+        <element xmi:type="uml:EnumerationLiteral" href="ros-profile.profile.uml#_88Yt8HuzEeKQzYBn8sWKCg"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_7mqx8dIHEeK4iuF3riAlKg" x="58" y="58"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_8B6jgNIHEeK4iuF3riAlKg" type="1037" fontName="Sans" fontHeight="10" lineColor="0">
+        <element xmi:type="uml:EnumerationLiteral" href="ros-profile.profile.uml#_ChcfgHuUEeKvksrsoW4V2w"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_8B6jgdIHEeK4iuF3riAlKg" x="44" y="67"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_8hL5cNIHEeK4iuF3riAlKg" type="1037" fontName="Sans" fontHeight="10" lineColor="0">
+        <element xmi:type="uml:EnumerationLiteral" href="ros-profile.profile.uml#_4fLwYHuTEeKvksrsoW4V2w"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_8hMggNIHEeK4iuF3riAlKg" x="9" y="69"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_sEbMGNIHEeK4iuF3riAlKg"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_sEbMGdIHEeK4iuF3riAlKg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_sEbMGtIHEeK4iuF3riAlKg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sEbMG9IHEeK4iuF3riAlKg"/>
+    </children>
+    <element xmi:type="uml:Enumeration" href="ros-profile.profile.uml#_1zmT4HuTEeKvksrsoW4V2w"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sEalAdIHEeK4iuF3riAlKg" x="72" y="269" width="145" height="140"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_RhDYYWysEeKsDNjRLLrw6Q"/>
   <element xmi:type="uml:Profile" href="ros-profile.profile.uml#_LiFfkGysEeKsDNjRLLrw6Q"/>

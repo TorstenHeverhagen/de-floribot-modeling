@@ -14,6 +14,11 @@
  */
 
 #include "[aClass.name.toUpperFirst()/].h"
+[let lang : EnumerationLiteral = (aClass.getValue(aClass.getAppliedStereotype('ros_profile::node'), 'language')).oclAsType(EnumerationLiteral)]
+	[if (lang.name.equalsIgnoreCase('Simulink'))]
+#include "simulink/[aClass.name/]_ert_rtw/[aClass.name/].h"
+	[/if]
+[/let]
 // [protected ('specific includes')]
 // TODO: include your own headers
 // [/protected] don't delete this line
@@ -42,6 +47,12 @@ namespace [aClass.namespace.name/] {
 	[/if]
     n_.getParam("/[aClass.name/]/[attr.name/]", [attr.name/]);
 [/for]
+[let lang : EnumerationLiteral = (aClass.getValue(aClass.getAppliedStereotype('ros_profile::node'), 'language')).oclAsType(EnumerationLiteral)]
+	[if (lang.name.equalsIgnoreCase('Simulink'))]
+    /* Initialize simulink model */
+    [aClass.name/]_initialize();
+	[/if]
+[/let]
     // [protected ('constructor')]
     // TODO: fill with your code
     // [/protected] don't delete this line
@@ -50,6 +61,12 @@ namespace [aClass.namespace.name/] {
 
 [aClass.name.toUpperFirst()/]::~[aClass.name.toUpperFirst()/]()
 {
+[let lang : EnumerationLiteral = (aClass.getValue(aClass.getAppliedStereotype('ros_profile::node'), 'language')).oclAsType(EnumerationLiteral)]
+	[if (lang.name.equalsIgnoreCase('Simulink'))]
+    /* Terminate simulink model */
+    [aClass.name/]_terminate();
+	[/if]
+[/let]
     // [protected ('destructor')]
     // TODO: fill with your code
     // [/protected] don't delete this line
@@ -89,6 +106,12 @@ void [aClass.name.toUpperFirst()/]::publish_[port.name.replaceAll('/', '_')/] ([
  */
 void [aClass.name.toUpperFirst()/]::tick ()
 {
+[let lang : EnumerationLiteral = (aClass.getValue(aClass.getAppliedStereotype('ros_profile::node'), 'language')).oclAsType(EnumerationLiteral)]
+	[if (lang.name.equalsIgnoreCase('Simulink'))]
+    /* Step the simulink model */
+    [aClass.name/]_step();
+	[/if]
+[/let]
 	// [protected ('call your own code')]
 	// TODO: fill with your code
 	// [/protected] don't delete this line

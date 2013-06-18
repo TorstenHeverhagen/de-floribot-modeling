@@ -11,7 +11,7 @@
 	<property name="TARGET" value="/home/floribot/ros_workspace"/>
 
 	<target name="generateSample" description="Generate files in 'TARGET'">
-		<antcall target="generate" >
+		<antcall target="generate.alljars" >
 			<param name="model" value="${MODEL}"/>
 			<param name="target" value="${TARGET}"/>
 		</antcall>

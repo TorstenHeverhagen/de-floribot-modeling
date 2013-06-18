@@ -22,10 +22,10 @@
   [for (aPart : Property | aClass.attribute)]
   	[if (aPart.type.isStereotypeApplied(aPart.type.getAppliedStereotype('ros_profile::node')))]
 		[let lang : EnumerationLiteral = (aPart.type.getValue(aPart.type.getAppliedStereotype('ros_profile::node'), 'language')).oclAsType(EnumerationLiteral)]
-			[if (lang.name.equalsIgnoreCase('Cpp'))]
-  <node name="[aPart.name/]" pkg="[aPart.type.namespace.name/]" type="[aPart.type.name + '_node'/]">
+			[if (lang.name.equalsIgnoreCase('Cpp') or lang.name.equalsIgnoreCase('Simulink'))]
+  <node name="[aPart.name/]" pkg="[aPart.type.namespace.name/]" type="[aPart.type.name + '_node'/]" [if (not aPart.ownedComment->isEmpty())]args="[for(aComment:Comment|aPart.ownedComment)][aComment._body/] [/for]"[/if]>
 			[elseif (lang.name.equalsIgnoreCase('Python'))]
-  <node name="[aPart.name/]" pkg="[aPart.type.namespace.name/]" type="[aPart.type.name + '_node.py'/]">
+  <node name="[aPart.name/]" pkg="[aPart.type.namespace.name/]" type="[aPart.type.name + '_node.py'/]" [if (not aPart.ownedComment->isEmpty())]args="[for(aComment:Comment|aPart.ownedComment)][aComment._body/] [/for]"[/if]>
 			[else]
   <node name="[aPart.name/]" pkg="[aPart.type.namespace.name/]" type="[aPart.type.name/]" [if (not aPart.ownedComment->isEmpty())]args="[for(aComment:Comment|aPart.ownedComment)][aComment._body/] [/for]"[/if]>
 			[/if]

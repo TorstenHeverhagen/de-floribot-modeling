@@ -31,6 +31,12 @@ set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 rosbuild_add_library([aNamedElement.name.toUpperFirst()/] src/[aNamedElement.name.toUpperFirst()/].cpp)
 rosbuild_add_executable([aNamedElement.name + '_node'/] src/[aNamedElement.name + '_node'/].cpp)
 target_link_libraries([aNamedElement.name + '_node'/] [aNamedElement.name.toUpperFirst()/])
+[let lang : EnumerationLiteral = (aNamedElement.getValue(aNamedElement.getAppliedStereotype('ros_profile::node'), 'language')).oclAsType(EnumerationLiteral)]
+	[if (lang.name.equalsIgnoreCase('Simulink'))]
+rosbuild_add_library(simulink_[aNamedElement.name/] src/simulink/[aNamedElement.name/]_ert_rtw/[aNamedElement.name/].cpp)
+target_link_libraries([aNamedElement.name/]_node simulink_[aNamedElement.name/])
+	[/if]
+[/let]
 	[/if]
 [/for]
 

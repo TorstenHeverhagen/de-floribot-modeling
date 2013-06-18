@@ -138,20 +138,45 @@
             <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
             <ifExpr xsi:type="ocl.ecore:OperationCallExp">
               <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
-              <source xsi:type="ocl.ecore:VariableExp" name="aNamedElement" referredVariable="/0/generatePackage/@body.3/aNamedElement">
-                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
-              </source>
-              <argument xsi:type="ocl.ecore:OperationCallExp">
-                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Stereotype"/>
-                <source xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/26">
+              <source xsi:type="ocl.ecore:OperationCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="aNamedElement" referredVariable="/0/generatePackage/@body.3/aNamedElement">
                   <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
                 </source>
-                <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="ros_profile::launch">
-                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <argument xsi:type="ocl.ecore:OperationCallExp">
+                  <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Stereotype"/>
+                  <source xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/26">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+                  </source>
+                  <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="ros_profile::launch">
+                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  </argument>
+                  <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/4.0.0/UML#//Element/getAppliedStereotype"/>
                 </argument>
-                <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/4.0.0/UML#//Element/getAppliedStereotype"/>
+                <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/4.0.0/UML#//Element/isStereotypeApplied"/>
+              </source>
+              <argument xsi:type="ocl.ecore:OperationCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                <source xsi:type="ocl.ecore:OperationCallExp">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                  <source xsi:type="ocl.ecore:VariableExp" name="aNamedElement" referredVariable="/0/generatePackage/@body.3/aNamedElement">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+                  </source>
+                  <argument xsi:type="ocl.ecore:OperationCallExp">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Stereotype"/>
+                    <source xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/26">
+                      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+                    </source>
+                    <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="ros_profile::dont_generate">
+                      <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                    </argument>
+                    <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/4.0.0/UML#//Element/getAppliedStereotype"/>
+                  </argument>
+                  <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/4.0.0/UML#//Element/isStereotypeApplied"/>
+                </source>
+                <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/not"/>
               </argument>
-              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/4.0.0/UML#//Element/isStereotypeApplied"/>
+              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/and"/>
             </ifExpr>
           </elseIf>
         </body>
@@ -554,7 +579,7 @@
     </eAnnotations>
     <eAnnotations source="positions.13" references="/0/generatePackage">
       <details key="start" value="745"/>
-      <details key="end" value="1457"/>
+      <details key="end" value="1551"/>
       <details key="line" value="23"/>
     </eAnnotations>
     <eAnnotations source="positions.14" references="/0/generatePackage/@body.0">
@@ -579,12 +604,12 @@
     </eAnnotations>
     <eAnnotations source="positions.18" references="/0/generatePackage/@body.3">
       <details key="start" value="923"/>
-      <details key="end" value="1381"/>
+      <details key="end" value="1475"/>
       <details key="line" value="27"/>
     </eAnnotations>
     <eAnnotations source="positions.19" references="/0/generatePackage/@body.3/@body.0">
       <details key="start" value="984"/>
-      <details key="end" value="1374"/>
+      <details key="end" value="1468"/>
       <details key="line" value="28"/>
     </eAnnotations>
     <eAnnotations source="positions.20" references="/0/generatePackage/@body.3/@body.0/@body.0">
@@ -694,145 +719,180 @@
     </eAnnotations>
     <eAnnotations source="positions.41" references="/0/generatePackage/@body.3/@body.0/@elseIf.0">
       <details key="start" value="1225"/>
-      <details key="end" value="1369"/>
+      <details key="end" value="1463"/>
       <details key="line" value="32"/>
     </eAnnotations>
     <eAnnotations source="positions.42" references="/0/generatePackage/@body.3/@body.0/@elseIf.0/@body.0">
-      <details key="start" value="1315"/>
-      <details key="end" value="1317"/>
+      <details key="start" value="1409"/>
+      <details key="end" value="1411"/>
       <details key="line" value="33"/>
     </eAnnotations>
     <eAnnotations source="positions.43" references="/0/generatePackage/@body.3/@body.0/@elseIf.0/@body.1">
-      <details key="start" value="1318"/>
-      <details key="end" value="1364"/>
+      <details key="start" value="1412"/>
+      <details key="end" value="1458"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.44" references="/0/generatePackage/@body.3/@body.0/@elseIf.0/@body.1/@argument.0">
-      <details key="start" value="1333"/>
-      <details key="end" value="1363"/>
+      <details key="start" value="1427"/>
+      <details key="end" value="1457"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.45" references="/0/generatePackage/@body.3/@body.0/@elseIf.0/@body.1/@argument.0/aNamedElement">
-      <details key="start" value="1333"/>
-      <details key="end" value="1346"/>
+      <details key="start" value="1427"/>
+      <details key="end" value="1440"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.46" references="/0/generatePackage/@body.3/@body.0/@elseIf.0/@body.1/@argument.0/@argument.0">
-      <details key="start" value="1357"/>
-      <details key="end" value="1362"/>
+      <details key="start" value="1451"/>
+      <details key="end" value="1456"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.47" references="/0/generatePackage/@body.3/@body.0/@elseIf.0/@body.2">
-      <details key="start" value="1367"/>
-      <details key="end" value="1368"/>
+      <details key="start" value="1461"/>
+      <details key="end" value="1462"/>
       <details key="line" value="34"/>
     </eAnnotations>
     <eAnnotations source="positions.48" references="/0/generatePackage/@body.3/@body.0/@elseIf.0/@ifExpr">
       <details key="start" value="1233"/>
-      <details key="end" value="1313"/>
+      <details key="end" value="1407"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.49" references="/0/generatePackage/@body.3/@body.0/@elseIf.0/@ifExpr/aNamedElement">
+    <eAnnotations source="positions.49" references="/0/generatePackage/@body.3/@body.0/@elseIf.0/@ifExpr/@source">
+      <details key="start" value="1234"/>
+      <details key="end" value="1312"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.50" references="/0/generatePackage/@body.3/@body.0/@elseIf.0/@ifExpr/@source/aNamedElement">
       <details key="start" value="1234"/>
       <details key="end" value="1247"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.50" references="/0/generatePackage/@body.3/@body.0/@elseIf.0/@ifExpr/@argument.0">
+    <eAnnotations source="positions.51" references="/0/generatePackage/@body.3/@body.0/@elseIf.0/@ifExpr/@source/@argument.0">
       <details key="start" value="1268"/>
       <details key="end" value="1311"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.51" references="/0/generatePackage/@body.3/@body.0/@elseIf.0/@ifExpr/@argument.0/self">
+    <eAnnotations source="positions.52" references="/0/generatePackage/@body.3/@body.0/@elseIf.0/@ifExpr/@source/@argument.0/self">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.52" references="/0/generatePackage/@body.3/@body.0/@elseIf.0/@ifExpr/@argument.0/@argument.0">
+    <eAnnotations source="positions.53" references="/0/generatePackage/@body.3/@body.0/@elseIf.0/@ifExpr/@source/@argument.0/@argument.0">
       <details key="start" value="1289"/>
       <details key="end" value="1310"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.53" references="/0/generatePackage/@body.3/aNamedElement">
-      <details key="start" value="929"/>
-      <details key="end" value="957"/>
-      <details key="line" value="27"/>
-    </eAnnotations>
-    <eAnnotations source="positions.54" references="/0/generatePackage/@body.3/@iterSet">
-      <details key="start" value="960"/>
-      <details key="end" value="980"/>
+    <eAnnotations source="positions.54" references="/0/generatePackage/@body.3/@body.0/@elseIf.0/@ifExpr/@argument.0">
+      <details key="start" value="1317"/>
+      <details key="end" value="1406"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.55" references="/0/generatePackage/@body.3/@iterSet/aPackage">
-      <details key="start" value="960"/>
-      <details key="end" value="968"/>
+    <eAnnotations source="positions.55" references="/0/generatePackage/@body.3/@body.0/@elseIf.0/@ifExpr/@argument.0/@source">
+      <details key="start" value="1321"/>
+      <details key="end" value="1406"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.56" references="/0/generatePackage/@body.4">
-      <details key="start" value="1382"/>
-      <details key="end" value="1383"/>
-      <details key="line" value="36"/>
-    </eAnnotations>
-    <eAnnotations source="positions.57" references="/0/generatePackage/@body.5">
-      <details key="start" value="1384"/>
-      <details key="end" value="1411"/>
+    <eAnnotations source="positions.56" references="/0/generatePackage/@body.3/@body.0/@elseIf.0/@ifExpr/@argument.0/@source/aNamedElement">
+      <details key="start" value="1321"/>
+      <details key="end" value="1334"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.58" references="/0/generatePackage/@body.5/aPackage">
-      <details key="start" value="1402"/>
-      <details key="end" value="1410"/>
+    <eAnnotations source="positions.57" references="/0/generatePackage/@body.3/@body.0/@elseIf.0/@ifExpr/@argument.0/@source/@argument.0">
+      <details key="start" value="1355"/>
+      <details key="end" value="1405"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.59" references="/0/generatePackage/@body.6">
-      <details key="start" value="1413"/>
-      <details key="end" value="1414"/>
-      <details key="line" value="38"/>
-    </eAnnotations>
-    <eAnnotations source="positions.60" references="/0/generatePackage/@body.7">
-      <details key="start" value="1415"/>
-      <details key="end" value="1442"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.61" references="/0/generatePackage/@body.7/aPackage">
-      <details key="start" value="1433"/>
-      <details key="end" value="1441"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.62" references="/0/generatePackage/@body.8">
-      <details key="start" value="1444"/>
-      <details key="end" value="1445"/>
-      <details key="line" value="39"/>
-    </eAnnotations>
-    <eAnnotations source="positions.63" references="/0/generatePackage/aPackage">
-      <details key="start" value="778"/>
-      <details key="end" value="796"/>
-      <details key="line" value="23"/>
-    </eAnnotations>
-    <eAnnotations source="positions.64" references="/0/generatePackage/@guard">
-      <details key="start" value="801"/>
-      <details key="end" value="888"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.65" references="/0/generatePackage/@guard/@source">
-      <details key="start" value="805"/>
-      <details key="end" value="888"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.66" references="/0/generatePackage/@guard/@source/aPackage">
-      <details key="start" value="805"/>
-      <details key="end" value="813"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.67" references="/0/generatePackage/@guard/@source/@argument.0">
-      <details key="start" value="834"/>
-      <details key="end" value="887"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.68" references="/0/generatePackage/@guard/@source/@argument.0/self">
+    <eAnnotations source="positions.58" references="/0/generatePackage/@body.3/@body.0/@elseIf.0/@ifExpr/@argument.0/@source/@argument.0/self">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.69" references="/0/generatePackage/@guard/@source/@argument.0/@argument.0">
+    <eAnnotations source="positions.59" references="/0/generatePackage/@body.3/@body.0/@elseIf.0/@ifExpr/@argument.0/@source/@argument.0/@argument.0">
+      <details key="start" value="1376"/>
+      <details key="end" value="1404"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.60" references="/0/generatePackage/@body.3/aNamedElement">
+      <details key="start" value="929"/>
+      <details key="end" value="957"/>
+      <details key="line" value="27"/>
+    </eAnnotations>
+    <eAnnotations source="positions.61" references="/0/generatePackage/@body.3/@iterSet">
+      <details key="start" value="960"/>
+      <details key="end" value="980"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.62" references="/0/generatePackage/@body.3/@iterSet/aPackage">
+      <details key="start" value="960"/>
+      <details key="end" value="968"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.63" references="/0/generatePackage/@body.4">
+      <details key="start" value="1476"/>
+      <details key="end" value="1477"/>
+      <details key="line" value="36"/>
+    </eAnnotations>
+    <eAnnotations source="positions.64" references="/0/generatePackage/@body.5">
+      <details key="start" value="1478"/>
+      <details key="end" value="1505"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.65" references="/0/generatePackage/@body.5/aPackage">
+      <details key="start" value="1496"/>
+      <details key="end" value="1504"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.66" references="/0/generatePackage/@body.6">
+      <details key="start" value="1507"/>
+      <details key="end" value="1508"/>
+      <details key="line" value="38"/>
+    </eAnnotations>
+    <eAnnotations source="positions.67" references="/0/generatePackage/@body.7">
+      <details key="start" value="1509"/>
+      <details key="end" value="1536"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.68" references="/0/generatePackage/@body.7/aPackage">
+      <details key="start" value="1527"/>
+      <details key="end" value="1535"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.69" references="/0/generatePackage/@body.8">
+      <details key="start" value="1538"/>
+      <details key="end" value="1539"/>
+      <details key="line" value="39"/>
+    </eAnnotations>
+    <eAnnotations source="positions.70" references="/0/generatePackage/aPackage">
+      <details key="start" value="778"/>
+      <details key="end" value="796"/>
+      <details key="line" value="23"/>
+    </eAnnotations>
+    <eAnnotations source="positions.71" references="/0/generatePackage/@guard">
+      <details key="start" value="801"/>
+      <details key="end" value="888"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.72" references="/0/generatePackage/@guard/@source">
+      <details key="start" value="805"/>
+      <details key="end" value="888"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.73" references="/0/generatePackage/@guard/@source/aPackage">
+      <details key="start" value="805"/>
+      <details key="end" value="813"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.74" references="/0/generatePackage/@guard/@source/@argument.0">
+      <details key="start" value="834"/>
+      <details key="end" value="887"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.75" references="/0/generatePackage/@guard/@source/@argument.0/self">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.76" references="/0/generatePackage/@guard/@source/@argument.0/@argument.0">
       <details key="start" value="855"/>
       <details key="end" value="886"/>
       <details key="line" value="0"/>

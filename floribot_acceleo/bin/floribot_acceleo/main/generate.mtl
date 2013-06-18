@@ -29,7 +29,7 @@
 		[generateNode(aNamedElement.oclAsType(Class))/]
 		[generateNode_h(aNamedElement.oclAsType(Class))/]
 		[generateNode_cpp(aNamedElement.oclAsType(Class))/]
-	[elseif (aNamedElement.isStereotypeApplied(getAppliedStereotype('ros_profile::launch')))]
+	[elseif (aNamedElement.isStereotypeApplied(getAppliedStereotype('ros_profile::launch')) and not aNamedElement.isStereotypeApplied(getAppliedStereotype('ros_profile::dont_generate')))]
 		[generateLaunch(aNamedElement.oclAsType(Class)) /]
 	[/if]
 [/for]

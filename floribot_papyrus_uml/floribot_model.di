@@ -70,36 +70,36 @@
     <availablePage>
       <emfPageIdentifier href="floribot_model.notation#_9jeYkM60EeKjQf6UPiByjQ"/>
     </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="floribot_model.notation#_QgGNANIKEeK4iuF3riAlKg"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="floribot_model.notation#_eJv-sNK8EeKWbaQoqCvQrA"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="floribot_model.notation#_Q17YANUIEeKn5N1emf-oLg"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="floribot_model.notation#_dvFJ0NUKEeKn5N1emf-oLg"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="floribot_model.notation#_mR6CINddEeKexp2bToTQlA"/>
+    </availablePage>
   </pageList>
   <sashModel currentSelection="//@sashModel/@windows.0/@children.0">
     <windows>
       <children xsi:type="di:TabFolder">
         <children>
-          <emfPageIdentifier href="floribot_model.notation#_D4jJsG7NEeKc1p_0m1m2fQ"/>
+          <emfPageIdentifier href="floribot_model.notation#_Q17YANUIEeKn5N1emf-oLg"/>
         </children>
         <children>
-          <emfPageIdentifier href="floribot_model.notation#_4i66sHuwEeKQzYBn8sWKCg"/>
+          <emfPageIdentifier href="floribot_model.notation#_dvFJ0NUKEeKn5N1emf-oLg"/>
         </children>
         <children>
-          <emfPageIdentifier href="floribot_model.notation#_7ahxIM3aEeK7g9n_B3nRNQ"/>
+          <emfPageIdentifier href="floribot_model.notation#_OZOd8IG3EeKUi5Ww85oteA"/>
         </children>
         <children>
-          <emfPageIdentifier href="floribot_model.notation#_AuVeAHEeEeK63bMg8hYDLg"/>
-        </children>
-        <children>
-          <emfPageIdentifier href="floribot_model.notation#_3Mnd0M6sEeKjQf6UPiByjQ"/>
-        </children>
-        <children>
-          <emfPageIdentifier href="floribot_model.notation#_n6dbAM6vEeKjQf6UPiByjQ"/>
-        </children>
-        <children>
-          <emfPageIdentifier href="floribot_model.notation#_CLPnMM6wEeKjQf6UPiByjQ"/>
-        </children>
-        <children>
-          <emfPageIdentifier href="floribot_model.notation#_SjJWIIG2EeKUi5Ww85oteA"/>
-        </children>
-        <children>
-          <emfPageIdentifier href="floribot_model.notation#_9jeYkM60EeKjQf6UPiByjQ"/>
+          <emfPageIdentifier href="floribot_model.notation#_mR6CINddEeKexp2bToTQlA"/>
         </children>
       </children>
     </windows>
